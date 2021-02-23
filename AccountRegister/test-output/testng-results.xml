@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-02-17T05:36:23Z" name="Default suite" finished-at="2021-02-17T05:36:44Z" duration-ms="21155">
+    <groups>
+    </groups>
+    <test started-at="2021-02-17T05:36:23Z" name="Default test" finished-at="2021-02-17T05:36:44Z" duration-ms="21155">
+      <class name="com.htc.register.SeleniumAcademyRegister">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.htc.register.SeleniumAcademyRegister@7c51f34b]" started-at="2021-02-17T05:36:23Z" name="setUp" finished-at="2021-02-17T05:36:25Z" duration-ms="2615" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testRegisterAccount_inputUserDetails_shouldShowSusccessfulRegistrationMessage()[pri:1, instance:com.htc.register.SeleniumAcademyRegister@7c51f34b]" started-at="2021-02-17T05:36:25Z" name="testRegisterAccount_inputUserDetails_shouldShowSusccessfulRegistrationMessage" finished-at="2021-02-17T05:36:44Z" duration-ms="18502" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegisterAccount_inputUserDetails_shouldShowSusccessfulRegistrationMessage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.htc.register.SeleniumAcademyRegister@7c51f34b]" started-at="2021-02-17T05:36:44Z" name="tearDown" finished-at="2021-02-17T05:36:44Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.htc.register.SeleniumAcademyRegister -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
