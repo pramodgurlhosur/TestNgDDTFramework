@@ -31,8 +31,6 @@ public class TestListener implements ITestListener {
 
 	public void onTestFailure(ITestResult result) {
 
-		
-		
 		System.out.println("*** Test execution " + result.getMethod().getMethodName() + " failed...");
 		ExtentTestManager.getTest().log(Status.FAIL, "Test Failed");	
 	}
