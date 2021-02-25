@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-BrowserTesting" class="navigator-link">
-              <span class="suite-name border-passed">BrowserTesting</span>
+              <span class="suite-name border-failed">BrowserTesting</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-BrowserTesting" class="navigator-link ">
-                    <span>C:\Users\PramodVG\Desktop\25493_PRAMODVGURLHOSUR_SEED40\SeleniumGrid - Copy\src\test\resources\madisonTest.xml</span>
+                    <span>D:\HTCEclipse_GIT\seleniumGrid\src\test\resources\madisonTest.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-BrowserTesting" class="hide-methods failed suite-BrowserTesting"> (hide)</a> <!-- hide-methods failed suite-BrowserTesting -->
+                      <a href="#" panel-name="suite-BrowserTesting" class="show-methods failed suite-BrowserTesting"> (show)</a> <!-- show-methods failed suite-BrowserTesting -->
+                    </span>
+                    <div class="method-list-content failed suite-BrowserTesting">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BrowserTesting" title="com.htc.grid.test.MadisonLoginTest" class="method navigator-link" hash-for-method="testLoginPage_enterValidCredentails_shouldShowSuccessMessage">testLoginPage_enterValidCredentails_shouldShowSuccessMessage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-BrowserTesting -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,12 +118,7 @@
                     <div class="method-list-content passed suite-BrowserTesting">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-BrowserTesting" title="com.htc.grid.test.MadisonLoginTest" class="method navigator-link" hash-for-method="testLoginPage_enterValidCredentails_shouldShowSuccessMessage(FIREFOX)">testLoginPage_enterValidCredentails_shouldShowSuccessMessage(FIREFOX)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-BrowserTesting" title="com.htc.grid.test.MadisonLoginTest" class="method navigator-link" hash-for-method="testLoginPage_validCredentails_shouldShowSuccessMessage(CHROME)">testLoginPage_validCredentails_shouldShowSuccessMessage(CHROME)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-BrowserTesting" title="com.htc.grid.test.MadisonLoginTest" class="method navigator-link" hash-for-method="testLoginPage_validCredentails_shouldShowSuccessMessage(FIREFOX)">testLoginPage_validCredentails_shouldShowSuccessMessage(FIREFOX)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-BrowserTesting -->
@@ -124,6 +133,29 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-BrowserTesting" class="panel BrowserTesting">
+          <div class="suite-BrowserTesting-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.htc.grid.test.MadisonLoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginPage_enterValidCredentails_shouldShowSuccessMessage">
+                  </a> <!-- testLoginPage_enterValidCredentails_shouldShowSuccessMessage -->
+                  <span class="method-name">testLoginPage_enterValidCredentails_shouldShowSuccessMessage</span>
+                  <div class="stack-trace">org.testng.TestNGException: 
+Parameter &apos;engine&apos; is required by @Test on method testLoginPage_enterValidCredentails_shouldShowSuccessMessage but has not been marked @Optional or defined
+in D:\HTCEclipse_GIT\seleniumGrid\src\test\resources\madisonTest.xml
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+... Removed 11 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-BrowserTesting-class-failed -->
           <div class="suite-BrowserTesting-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -132,18 +164,10 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testLoginPage_enterValidCredentails_shouldShowSuccessMessage(FIREFOX)">
-                  </a> <!-- testLoginPage_enterValidCredentails_shouldShowSuccessMessage(FIREFOX) -->
-                  <span class="method-name">testLoginPage_enterValidCredentails_shouldShowSuccessMessage</span>
-                  <span class="parameters">(FIREFOX)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testLoginPage_validCredentails_shouldShowSuccessMessage(CHROME)">
-                  </a> <!-- testLoginPage_validCredentails_shouldShowSuccessMessage(CHROME) -->
+                  <a name="testLoginPage_validCredentails_shouldShowSuccessMessage(FIREFOX)">
+                  </a> <!-- testLoginPage_validCredentails_shouldShowSuccessMessage(FIREFOX) -->
                   <span class="method-name">testLoginPage_validCredentails_shouldShowSuccessMessage</span>
-                  <span class="parameters">(CHROME)</span>
+                  <span class="parameters">(FIREFOX)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -151,7 +175,7 @@
         </div> <!-- panel BrowserTesting -->
         <div panel-name="test-xml-BrowserTesting" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\PramodVG\Desktop\25493_PRAMODVGURLHOSUR_SEED40\SeleniumGrid - Copy\src\test\resources\madisonTest.xml</span>
+            <span class="header-content">D:\HTCEclipse_GIT\seleniumGrid\src\test\resources\madisonTest.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -161,13 +185,12 @@
   &lt;listeners&gt;
     &lt;listener class-name=&quot;com.htc.grid.listeners.CustomListener&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;2&quot; parallel=&quot;methods&quot; name=&quot;chromeTest&quot;&gt;
-    &lt;parameter name=&quot;engine&quot; value=&quot;FIREFOX&quot;/&gt;
-    &lt;parameter name=&quot;browser&quot; value=&quot;CHROME&quot;/&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;methods&quot; name=&quot;ParallelTest&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;FIREFOX&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.htc.grid.test.MadisonLoginTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- chromeTest --&gt;
+  &lt;/test&gt; &lt;!-- ParallelTest --&gt;
 &lt;/suite&gt; &lt;!-- BrowserTesting --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -179,7 +202,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">chromeTest (1 class)</span>
+                <span class="test-name">ParallelTest (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -207,18 +230,18 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testLoginPage_enterValidCredentails_shouldShowSuccessMessage')
+data.setCell(0, 1, 'testLoginPage_validCredentails_shouldShowSuccessMessage')
 data.setCell(0, 2, 'com.htc.grid.test.MadisonLoginTest')
-data.setCell(0, 3, 34088);
+data.setCell(0, 3, 24237);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testLoginPage_validCredentails_shouldShowSuccessMessage')
+data.setCell(1, 1, 'testLoginPage_enterValidCredentails_shouldShowSuccessMessage')
 data.setCell(1, 2, 'com.htc.grid.test.MadisonLoginTest')
-data.setCell(1, 3, 32928);
+data.setCell(1, 3, 0);
 window.suiteTableData['BrowserTesting']= { tableData: data, tableDiv: 'times-div-BrowserTesting'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 24 seconds</span>
               <div id="times-div-BrowserTesting">
               </div> <!-- times-div-BrowserTesting -->
             </div> <!-- times-div -->
@@ -250,12 +273,8 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <span class="method-name">testLoginPage_validCredentails_shouldShowSuccessMessage(CHROME)</span>
-                <span class="method-start">50 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testLoginPage_enterValidCredentails_shouldShowSuccessMessage(FIREFOX)</span>
-                <span class="method-start">50 ms</span>
+                <span class="method-name">testLoginPage_validCredentails_shouldShowSuccessMessage(FIREFOX)</span>
+                <span class="method-start">41 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
