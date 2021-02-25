@@ -8,11 +8,7 @@
    <parameter name="browser" value="CHROME"></parameter>
   <parameter name="engine" value="FIREFOX"></parameter>
   <classes>
-  <class name="com.htc.grid.test.MadisonLoginTest">
-  <methods>
-  <include name="testLoginPage_validCredentails_shouldShowSuccessMessage()"></include>
-  <include name="testLoginPage_enterValidCredentails_shouldShowSuccessMessage"></include>
-  </methods></class>
+  <class name="com.htc.grid.test.MadisonLoginTest"></class>
   </classes>
     </test>
 </suite> 
