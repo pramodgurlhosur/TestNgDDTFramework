@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="methods" name="BrowserTesting">
+<listeners>
+<listener class-name="com.htc.grid.listeners.CustomListener"></listener>
+</listeners>
+  <test name="chromeTest">
+   <parameter name="browser" value="CHROME"></parameter>
+  <parameter name="engine" value="FIREFOX"></parameter>
+  <classes>
+  <class name="com.htc.grid.test.MadisonLoginTest"></class>
+  </classes>
+    </test>
+</suite> 
