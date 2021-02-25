@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="11" passed="8" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-02-23T18:44:52 IST" name="Suite" finished-at="2021-02-23T18:44:56 IST" duration-ms="3489">
+  <suite started-at="2021-02-25T16:01:01 IST" name="Suite" finished-at="2021-02-25T16:01:06 IST" duration-ms="4092">
     <groups>
     </groups>
-    <test started-at="2021-02-23T18:44:52 IST" name="Admin Tests" finished-at="2021-02-23T18:44:56 IST" duration-ms="3489">
+    <test started-at="2021-02-25T16:01:01 IST" name="Admin Tests" finished-at="2021-02-25T16:01:06 IST" duration-ms="4092">
       <class name="com.htc.extentReport.testCases.CreateAccountTest">
-        <test-method is-config="true" signature="initializeTestBaseSetup(java.lang.String, java.lang.String)[pri:0, instance:com.htc.extentReport.testCases.CreateAccountTest@747edf66]" started-at="2021-02-23T18:44:56 IST" name="initializeTestBaseSetup" finished-at="2021-02-23T18:44:56 IST" duration-ms="16" status="PASS">
+        <test-method is-config="true" signature="initializeTestBaseSetup(java.lang.String, java.lang.String)[pri:0, instance:com.htc.extentReport.testCases.CreateAccountTest@747edf66]" started-at="2021-02-25T16:01:06 IST" name="initializeTestBaseSetup" finished-at="2021-02-25T16:01:06 IST" duration-ms="7" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,19 +23,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeTestBaseSetup -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.htc.extentReport.testCases.CreateAccountTest@747edf66]" started-at="2021-02-23T18:44:56 IST" name="setUp" finished-at="2021-02-23T18:44:56 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="createAccountExample1()[pri:0, instance:com.htc.extentReport.testCases.CreateAccountTest@747edf66]" started-at="2021-02-23T18:44:56 IST" name="createAccountExample1" finished-at="2021-02-23T18:44:56 IST" duration-ms="2" status="PASS">
+        <test-method signature="createAccountExample1()[pri:0, instance:com.htc.extentReport.testCases.CreateAccountTest@747edf66]" started-at="2021-02-25T16:01:06 IST" name="createAccountExample1" finished-at="2021-02-25T16:01:06 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createAccountExample1 -->
-        <test-method signature="createAccountExample2()[pri:0, instance:com.htc.extentReport.testCases.CreateAccountTest@747edf66]" started-at="2021-02-23T18:44:56 IST" name="createAccountExample2" finished-at="2021-02-23T18:44:56 IST" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.htc.extentReport.testCases.CreateAccountTest@747edf66]" started-at="2021-02-25T16:01:06 IST" name="setUp" finished-at="2021-02-25T16:01:06 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="createAccountExample2()[pri:0, instance:com.htc.extentReport.testCases.CreateAccountTest@747edf66]" started-at="2021-02-25T16:01:06 IST" name="createAccountExample2" finished-at="2021-02-25T16:01:06 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createAccountExample2 -->
-        <test-method signature="verifyCreateAnAccountPage()[pri:0, instance:com.htc.extentReport.testCases.CreateAccountTest@747edf66]" started-at="2021-02-23T18:44:56 IST" name="verifyCreateAnAccountPage" finished-at="2021-02-23T18:44:56 IST" duration-ms="2" status="FAIL">
+        <test-method signature="verifyCreateAnAccountPage()[pri:0, instance:com.htc.extentReport.testCases.CreateAccountTest@747edf66]" started-at="2021-02-25T16:01:06 IST" name="verifyCreateAnAccountPage" finished-at="2021-02-25T16:01:06 IST" duration-ms="2" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <message>
               <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null]]>
@@ -78,7 +78,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCreateAnAccountPage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.htc.extentReport.testCases.CreateAccountTest@747edf66]" started-at="2021-02-23T18:44:56 IST" name="tearDown" finished-at="2021-02-23T18:44:56 IST" duration-ms="0" status="FAIL">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.htc.extentReport.testCases.CreateAccountTest@747edf66]" started-at="2021-02-25T16:01:06 IST" name="tearDown" finished-at="2021-02-25T16:01:06 IST" duration-ms="1" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <message>
               <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.quit()" because "this.driver" is null]]>
@@ -120,7 +120,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- tearDown -->
       </class> <!-- com.htc.extentReport.testCases.CreateAccountTest -->
       <class name="com.htc.extentReport.testCases.BasePageTest">
-        <test-method is-config="true" signature="initializeTestBaseSetup(java.lang.String, java.lang.String)[pri:0, instance:com.htc.extentReport.testCases.BasePageTest@346d61be]" started-at="2021-02-23T18:44:52 IST" name="initializeTestBaseSetup" finished-at="2021-02-23T18:44:52 IST" duration-ms="76" status="PASS">
+        <test-method is-config="true" signature="initializeTestBaseSetup(java.lang.String, java.lang.String)[pri:0, instance:com.htc.extentReport.testCases.BasePageTest@346d61be]" started-at="2021-02-25T16:01:02 IST" name="initializeTestBaseSetup" finished-at="2021-02-25T16:01:02 IST" duration-ms="218" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -136,23 +136,23 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeTestBaseSetup -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.htc.extentReport.testCases.BasePageTest@346d61be]" started-at="2021-02-23T18:44:52 IST" name="setUp" finished-at="2021-02-23T18:44:52 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.htc.extentReport.testCases.BasePageTest@346d61be]" started-at="2021-02-25T16:01:02 IST" name="setUp" finished-at="2021-02-25T16:01:02 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="baseTest1()[pri:0, instance:com.htc.extentReport.testCases.BasePageTest@346d61be]" started-at="2021-02-23T18:44:52 IST" name="baseTest1" finished-at="2021-02-23T18:44:53 IST" duration-ms="233" status="PASS">
+        <test-method signature="baseTest1()[pri:0, instance:com.htc.extentReport.testCases.BasePageTest@346d61be]" started-at="2021-02-25T16:01:02 IST" name="baseTest1" finished-at="2021-02-25T16:01:02 IST" duration-ms="607" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- baseTest1 -->
-        <test-method signature="baseTest2()[pri:0, instance:com.htc.extentReport.testCases.BasePageTest@346d61be]" started-at="2021-02-23T18:44:53 IST" name="baseTest2" finished-at="2021-02-23T18:44:56 IST" duration-ms="3006" status="PASS">
+        <test-method signature="baseTest2()[pri:0, instance:com.htc.extentReport.testCases.BasePageTest@346d61be]" started-at="2021-02-25T16:01:02 IST" name="baseTest2" finished-at="2021-02-25T16:01:05 IST" duration-ms="3021" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- baseTest2 -->
-        <test-method signature="baseTest3()[pri:0, instance:com.htc.extentReport.testCases.BasePageTest@346d61be]" started-at="2021-02-23T18:44:56 IST" name="baseTest3" finished-at="2021-02-23T18:44:56 IST" duration-ms="5" status="PASS">
+        <test-method signature="baseTest3()[pri:0, instance:com.htc.extentReport.testCases.BasePageTest@346d61be]" started-at="2021-02-25T16:01:05 IST" name="baseTest3" finished-at="2021-02-25T16:01:05 IST" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- baseTest3 -->
-        <test-method signature="verifyHomePage()[pri:0, instance:com.htc.extentReport.testCases.BasePageTest@346d61be]" started-at="2021-02-23T18:44:56 IST" name="verifyHomePage" finished-at="2021-02-23T18:44:56 IST" duration-ms="7" status="FAIL">
+        <test-method signature="verifyHomePage()[pri:0, instance:com.htc.extentReport.testCases.BasePageTest@346d61be]" started-at="2021-02-25T16:01:05 IST" name="verifyHomePage" finished-at="2021-02-25T16:01:05 IST" duration-ms="35" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <message>
               <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.getTitle()" because "this.driver" is null]]>
@@ -196,7 +196,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyHomePage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.htc.extentReport.testCases.BasePageTest@346d61be]" started-at="2021-02-23T18:44:56 IST" name="tearDown" finished-at="2021-02-23T18:44:56 IST" duration-ms="1" status="FAIL">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.htc.extentReport.testCases.BasePageTest@346d61be]" started-at="2021-02-25T16:01:06 IST" name="tearDown" finished-at="2021-02-25T16:01:06 IST" duration-ms="1" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <message>
               <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.quit()" because "this.driver" is null]]>
@@ -238,7 +238,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- tearDown -->
       </class> <!-- com.htc.extentReport.testCases.BasePageTest -->
       <class name="com.htc.extentReport.testCases.SignInPageTest">
-        <test-method is-config="true" signature="initializeTestBaseSetup(java.lang.String, java.lang.String)[pri:0, instance:com.htc.extentReport.testCases.SignInPageTest@55536d9e]" started-at="2021-02-23T18:44:56 IST" name="initializeTestBaseSetup" finished-at="2021-02-23T18:44:56 IST" duration-ms="10" status="PASS">
+        <test-method is-config="true" signature="initializeTestBaseSetup(java.lang.String, java.lang.String)[pri:0, instance:com.htc.extentReport.testCases.SignInPageTest@55536d9e]" started-at="2021-02-25T16:01:06 IST" name="initializeTestBaseSetup" finished-at="2021-02-25T16:01:06 IST" duration-ms="15" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -254,23 +254,23 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeTestBaseSetup -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.htc.extentReport.testCases.SignInPageTest@55536d9e]" started-at="2021-02-23T18:44:56 IST" name="setUp" finished-at="2021-02-23T18:44:56 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.htc.extentReport.testCases.SignInPageTest@55536d9e]" started-at="2021-02-25T16:01:06 IST" name="setUp" finished-at="2021-02-25T16:01:06 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="SignInPageTestOne()[pri:0, instance:com.htc.extentReport.testCases.SignInPageTest@55536d9e]" started-at="2021-02-23T18:44:56 IST" name="SignInPageTestOne" finished-at="2021-02-23T18:44:56 IST" duration-ms="2" status="PASS">
+        <test-method signature="SignInPageTestOne()[pri:0, instance:com.htc.extentReport.testCases.SignInPageTest@55536d9e]" started-at="2021-02-25T16:01:06 IST" name="SignInPageTestOne" finished-at="2021-02-25T16:01:06 IST" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SignInPageTestOne -->
-        <test-method signature="SignInPageTestThree()[pri:0, instance:com.htc.extentReport.testCases.SignInPageTest@55536d9e]" started-at="2021-02-23T18:44:56 IST" name="SignInPageTestThree" finished-at="2021-02-23T18:44:56 IST" duration-ms="2" status="PASS">
+        <test-method signature="SignInPageTestThree()[pri:0, instance:com.htc.extentReport.testCases.SignInPageTest@55536d9e]" started-at="2021-02-25T16:01:06 IST" name="SignInPageTestThree" finished-at="2021-02-25T16:01:06 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SignInPageTestThree -->
-        <test-method signature="SignInPageTestTwo()[pri:0, instance:com.htc.extentReport.testCases.SignInPageTest@55536d9e]" started-at="2021-02-23T18:44:56 IST" name="SignInPageTestTwo" finished-at="2021-02-23T18:44:56 IST" duration-ms="2" status="PASS">
+        <test-method signature="SignInPageTestTwo()[pri:0, instance:com.htc.extentReport.testCases.SignInPageTest@55536d9e]" started-at="2021-02-25T16:01:06 IST" name="SignInPageTestTwo" finished-at="2021-02-25T16:01:06 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SignInPageTestTwo -->
-        <test-method signature="verifySignInFunction()[pri:0, instance:com.htc.extentReport.testCases.SignInPageTest@55536d9e]" started-at="2021-02-23T18:44:56 IST" name="verifySignInFunction" finished-at="2021-02-23T18:44:56 IST" duration-ms="9" status="FAIL">
+        <test-method signature="verifySignInFunction()[pri:0, instance:com.htc.extentReport.testCases.SignInPageTest@55536d9e]" started-at="2021-02-25T16:01:06 IST" name="verifySignInFunction" finished-at="2021-02-25T16:01:06 IST" duration-ms="1" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <message>
               <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null]]>
@@ -313,7 +313,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySignInFunction -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.htc.extentReport.testCases.SignInPageTest@55536d9e]" started-at="2021-02-23T18:44:56 IST" name="tearDown" finished-at="2021-02-23T18:44:56 IST" duration-ms="1" status="FAIL">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.htc.extentReport.testCases.SignInPageTest@55536d9e]" started-at="2021-02-25T16:01:06 IST" name="tearDown" finished-at="2021-02-25T16:01:06 IST" duration-ms="0" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <message>
               <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.quit()" because "this.driver" is null]]>
