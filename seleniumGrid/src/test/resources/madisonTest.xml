@@ -4,7 +4,7 @@
 <listeners>
 <listener class-name="com.htc.grid.listeners.CustomListener"></listener>
 </listeners>
-  <test name="chromeTest">
+  <test name="ParallelTest">
    <parameter name="browser" value="CHROME"></parameter>
   <parameter name="engine" value="FIREFOX"></parameter>
   <classes>
