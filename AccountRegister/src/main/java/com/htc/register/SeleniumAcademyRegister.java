@@ -40,7 +40,7 @@ public void tearDown() throws Exception {
 	//driver.close();
 }
 
-@Test(priority=1,enabled=false)
+@Test(priority=1)
 public void testRegisterAccount_inputUserDetails_shouldShowSusccessfulRegistrationMessage() throws InterruptedException
 {
 	driver.get(prop.getProperty("website_url"));
