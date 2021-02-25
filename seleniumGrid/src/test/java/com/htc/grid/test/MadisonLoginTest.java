@@ -28,7 +28,7 @@ public class MadisonLoginTest {
 		prop=new Properties();
 		FileInputStream fis;
 		try {
-			fis = new FileInputStream("C:\\Users\\PramodVG\\Desktop\\25493_PRAMODVGURLHOSUR_SEED40\\SeleniumGrid - Copy\\src\\test\\resources\\Application.properties");
+			fis = new FileInputStream("src\\test\\resources\\Application.properties");
 			prop.load(fis);
 			nodeURL=prop.getProperty("testNG.grid.nodeURL");
 		} catch (IOException e) {
