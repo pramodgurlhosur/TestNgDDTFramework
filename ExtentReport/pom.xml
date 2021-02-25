@@ -82,7 +82,7 @@
 				<version>3.0.0-M5</version>
 				    <configuration> 
 				<suiteXmlFiles> 
-				<suiteXmlFile>D:\ECLIPSE WORKSPACE\ExtentReport\src\test\resources\testng.xml</suiteXmlFile> 
+				<suiteXmlFile>src\test\resources\testng.xml</suiteXmlFile> 
 				
 				</suiteXmlFiles> 
 					</configuration>
