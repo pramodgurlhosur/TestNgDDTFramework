@@ -40,7 +40,7 @@ public void tearDown() throws Exception {
 	//driver.close();
 }
 
-@Test(priority=1)
+@Test(priority=1,enabled=false)
 public void testRegisterAccount_inputUserDetails_shouldShowSusccessfulRegistrationMessage() throws InterruptedException
 {
 	driver.get(prop.getProperty("website_url"));
@@ -69,7 +69,7 @@ public void testRegisterAccount_inputUserDetails_shouldShowSusccessfulRegistrati
 	System.out.println("Registration successfull"+successMessage.getText());
 }
 
-@Test(priority=2,enabled=false)
+@Test(priority=2)
 public void testLoginAccount_validCredentails_shouldShowSuccessMessage() throws InterruptedException
 {
 	driver.get(prop.getProperty("website_url"));
@@ -88,7 +88,7 @@ public void testLoginAccount_validCredentails_shouldShowSuccessMessage() throws 
      System.out.println("After login the title changed to "+driver.getTitle());
 }
 
-@Test(priority=3,enabled=false)
+@Test(priority=3)
 public void testPurchaseProduct_enterDetailsRequired_shouldAllowToCheckout() throws InterruptedException
 { 
   Actions act=new Actions(driver);
