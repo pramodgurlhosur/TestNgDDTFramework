@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-BrowserTesting" class="navigator-link">
-              <span class="suite-name border-failed">BrowserTesting</span>
+              <span class="suite-name border-passed">BrowserTesting</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,21 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-BrowserTesting" class="hide-methods failed suite-BrowserTesting"> (hide)</a> <!-- hide-methods failed suite-BrowserTesting -->
-                      <a href="#" panel-name="suite-BrowserTesting" class="show-methods failed suite-BrowserTesting"> (show)</a> <!-- show-methods failed suite-BrowserTesting -->
-                    </span>
-                    <div class="method-list-content failed suite-BrowserTesting">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-BrowserTesting" title="com.htc.grid.test.MadisonLoginTest" class="method navigator-link" hash-for-method="testLoginPage_validCredentails_shouldShowSuccessMessage(CHROME)">testLoginPage_validCredentails_shouldShowSuccessMessage(CHROME)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-BrowserTesting -->
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -119,6 +105,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-BrowserTesting" title="com.htc.grid.test.MadisonLoginTest" class="method navigator-link" hash-for-method="testLoginPage_enterValidCredentails_shouldShowSuccessMessage(FIREFOX)">testLoginPage_enterValidCredentails_shouldShowSuccessMessage(FIREFOX)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BrowserTesting" title="com.htc.grid.test.MadisonLoginTest" class="method navigator-link" hash-for-method="testLoginPage_validCredentails_shouldShowSuccessMessage(CHROME)">testLoginPage_validCredentails_shouldShowSuccessMessage(CHROME)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-BrowserTesting -->
@@ -133,91 +124,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-BrowserTesting" class="panel BrowserTesting">
-          <div class="suite-BrowserTesting-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.htc.grid.test.MadisonLoginTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testLoginPage_validCredentails_shouldShowSuccessMessage(CHROME)">
-                  </a> <!-- testLoginPage_validCredentails_shouldShowSuccessMessage(CHROME) -->
-                  <span class="method-name">testLoginPage_validCredentails_shouldShowSuccessMessage</span>
-                  <span class="parameters">(CHROME)</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: Error forwarding the new session new session request for webdriver should contain a location header or an &apos;application/json;charset=UTF-8&apos; response body with the session ID.
-Command duration or timeout: 600.18 seconds
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$errorHandler$0(JsonWireProtocolResponse.java:54)
-	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
-	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
-	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:144)
-	at com.htc.grid.utility.RemoteDriverFactory.getDriver(RemoteDriverFactory.java:19)
-	at com.htc.grid.test.MadisonLoginTest.testLoginPage_validCredentails_shouldShowSuccessMessage(MadisonLoginTest.java:44)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:832)
-Caused by: org.openqa.selenium.WebDriverException: Error forwarding the new session new session request for webdriver should contain a location header or an &apos;application/json;charset=UTF-8&apos; response body with the session ID.
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-NLOJU8G&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
-Driver info: driver.version: unknown
-	at org.openqa.grid.web.servlet.handler.RequestHandler.process(RequestHandler.java:118)
-	at org.openqa.grid.web.servlet.DriverServlet.process(DriverServlet.java:85)
-	at org.openqa.grid.web.servlet.DriverServlet.doPost(DriverServlet.java:69)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
-	at org.seleniumhq.jetty9.servlet.ServletHolder.handle(ServletHolder.java:865)
-	at org.seleniumhq.jetty9.servlet.ServletHandler.doHandle(ServletHandler.java:535)
-	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
-	at org.seleniumhq.jetty9.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
-	at org.seleniumhq.jetty9.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
-	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
-	at org.seleniumhq.jetty9.server.handler.ContextHandler.doHandle(ContextHandler.java:1340)
-	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
-	at org.seleniumhq.jetty9.servlet.ServletHandler.doScope(ServletHandler.java:473)
-	at org.seleniumhq.jetty9.server.session.SessionHandler.doScope(SessionHandler.java:1564)
-	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
-	at org.seleniumhq.jetty9.server.handler.ContextHandler.doScope(ContextHandler.java:1242)
-	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
-	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.seleniumhq.jetty9.server.Server.handle(Server.java:503)
-	at org.seleniumhq.jetty9.server.HttpChannel.handle(HttpChannel.java:364)
-	at org.seleniumhq.jetty9.server.HttpConnection.onFillable(HttpConnection.java:260)
-	at org.seleniumhq.jetty9.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
-	at org.seleniumhq.jetty9.io.FillInterest.fillable(FillInterest.java:103)
-	at org.seleniumhq.jetty9.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
-	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
-	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
-	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
-	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
-	at org.seleniumhq.jetty9.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
-	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:765)
-	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:683)
-	at java.lang.Thread.run(Unknown Source)
-... Removed 17 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-BrowserTesting-class-failed -->
           <div class="suite-BrowserTesting-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -230,6 +136,14 @@ Driver info: driver.version: unknown
                   </a> <!-- testLoginPage_enterValidCredentails_shouldShowSuccessMessage(FIREFOX) -->
                   <span class="method-name">testLoginPage_enterValidCredentails_shouldShowSuccessMessage</span>
                   <span class="parameters">(FIREFOX)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginPage_validCredentails_shouldShowSuccessMessage(CHROME)">
+                  </a> <!-- testLoginPage_validCredentails_shouldShowSuccessMessage(CHROME) -->
+                  <span class="method-name">testLoginPage_validCredentails_shouldShowSuccessMessage</span>
+                  <span class="parameters">(CHROME)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -247,13 +161,13 @@ Driver info: driver.version: unknown
   &lt;listeners&gt;
     &lt;listener class-name=&quot;com.htc.grid.listeners.CustomListener&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;2&quot; parallel=&quot;methods&quot; name=&quot;chromeTest&quot;&gt;
-    &lt;parameter name=&quot;engine&quot; value=&quot;FIREFOX&quot;/&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;methods&quot; name=&quot;ParallelTest&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;CHROME&quot;/&gt;
+    &lt;parameter name=&quot;browse&quot; value=&quot;FIREFOX&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.htc.grid.test.MadisonLoginTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- chromeTest --&gt;
+  &lt;/test&gt; &lt;!-- ParallelTest --&gt;
 &lt;/suite&gt; &lt;!-- BrowserTesting --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -265,7 +179,7 @@ Driver info: driver.version: unknown
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">chromeTest (1 class)</span>
+                <span class="test-name">ParallelTest (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -295,16 +209,16 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testLoginPage_validCredentails_shouldShowSuccessMessage')
 data.setCell(0, 2, 'com.htc.grid.test.MadisonLoginTest')
-data.setCell(0, 3, 601256);
+data.setCell(0, 3, 57883);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'testLoginPage_enterValidCredentails_shouldShowSuccessMessage')
 data.setCell(1, 2, 'com.htc.grid.test.MadisonLoginTest')
-data.setCell(1, 3, 25168);
+data.setCell(1, 3, 42629);
 window.suiteTableData['BrowserTesting']= { tableData: data, tableDiv: 'times-div-BrowserTesting'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 10 minutes</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-BrowserTesting">
               </div> <!-- times-div-BrowserTesting -->
             </div> <!-- times-div -->
@@ -336,14 +250,12 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">testLoginPage_validCredentails_shouldShowSuccessMessage(CHROME)</span>
-                <span class="method-start">40 ms</span>
+                <span class="method-start">65 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testLoginPage_enterValidCredentails_shouldShowSuccessMessage(FIREFOX)</span>
-                <span class="method-start">40 ms</span>
+                <span class="method-start">65 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
