@@ -4,15 +4,16 @@
   <listeners>
     <listener class-name="com.htc.grid.listeners.CustomListener"/>
   </listeners>
-  <test thread-count="2" parallel="methods" name="ParallelTest(failed)">
-    <parameter name="browser" value="FIREFOX"/>
+  <test thread-count="2" parallel="methods" name="chromeTest(failed)">
+    <parameter name="engine" value="FIREFOX"/>
+    <parameter name="browser" value="CHROME"/>
     <classes>
       <class name="com.htc.grid.test.MadisonLoginTest">
         <methods>
-          <include name="testLoginPage_enterValidCredentails_shouldShowSuccessMessage"/>
           <include name="setup"/>
+          <include name="testLoginPage_validCredentails_shouldShowSuccessMessage" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.htc.grid.test.MadisonLoginTest -->
     </classes>
-  </test> <!-- ParallelTest(failed) -->
+  </test> <!-- chromeTest(failed) -->
 </suite> <!-- Failed suite [BrowserTesting] -->

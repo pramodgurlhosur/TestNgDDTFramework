@@ -60,7 +60,7 @@ public void testLoginPage_validCredentails_shouldShowSuccessMessage(String brows
 	}
 	
 	@Test
-	@Parameters({"engine"})
+	@Parameters({"browse"})
 public void testLoginPage_enterValidCredentails_shouldShowSuccessMessage(String browser) throws MalformedURLException
 	{
 		driver = RemoteDriverFactory.getDriver(Browser.valueOf(browser), nodeURL);
