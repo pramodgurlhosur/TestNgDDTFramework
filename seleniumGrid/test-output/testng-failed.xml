@@ -6,7 +6,7 @@
   </listeners>
   <test thread-count="2" parallel="methods" name="ParallelTest(failed)">
     <parameter name="browser" value="CHROME"/>
-    <parameter name="browse" value="CHROME"/>
+    <parameter name="browse" value="FIREFOX"/>
     <classes>
       <class name="com.htc.grid.test.MadisonLoginTest">
         <methods>
