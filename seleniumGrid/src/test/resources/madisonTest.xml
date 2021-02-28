@@ -6,7 +6,7 @@
 </listeners>
   <test name="ParallelTest">
    <parameter name="browser" value="CHROME"></parameter>
-  <parameter name="browse" value="CHROME"></parameter>
+  <parameter name="browse" value="FIREFOX"></parameter>
   <classes>
   <class name="com.htc.grid.test.MadisonLoginTest"></class>
   </classes>
