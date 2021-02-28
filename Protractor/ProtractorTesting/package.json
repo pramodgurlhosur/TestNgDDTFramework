@@ -1,0 +1,19 @@
+{
+  "name": "protractortesting",
+  "version": "1.0.0",
+  "description": "test angular appwith protractor ",
+  "main": "index.js",
+  "scripts": {
+    "webdriver:start" :"webdriver-manager start",
+    "webdriver:update" :"webdriver-manager update"
+  },
+  "repository": {
+    "type": "git",
+    "url": "file:///D:\\HTCEclipse_GIT"
+  },
+  "author": "Pramod VG",
+  "license": "ISC",
+  "dependencies": {
+    "protractor": "^6.14.11"
+  }
+}
