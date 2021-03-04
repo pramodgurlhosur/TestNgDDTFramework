@@ -9,15 +9,14 @@ import org.testng.annotations.Test;
 import com.htc.madison.pages.AccountMenu;
 import com.htc.madison.pages.LoginPage;
 import com.htc.madison.pages.RegisterPage;
-import com.htc.madison.util.DataProviders;
-import com.htc.madison.util.TestUtil;
+import com.htc.madison.utilities.DataProviders;
+import com.htc.madison.utilities.TestUtil;
 import com.htc.madsion.base.TestBase;
 
 public class RegisterPageTest extends TestBase {
    RegisterPage register;
    LoginPage login;
    AccountMenu account;
-   TestUtil util;
    
   public RegisterPageTest() 
   {
@@ -29,7 +28,6 @@ public class RegisterPageTest extends TestBase {
   {
 	  register=new RegisterPage(driver);
 	  account=new AccountMenu(driver);
-	  util=new TestUtil();
   }
 
 	   @Test(dataProviderClass = DataProviders.class ,dataProvider ="madison_register")
@@ -45,7 +43,7 @@ public class RegisterPageTest extends TestBase {
 		String confirmPasswd=parameters[5];
 		register.clickOnRegisterButton(fName,mName,lName,emailId,passwd,confirmPasswd);
 		System.out.println("Registration has Done Succesfully");
-		driver.manage().timeouts().implicitlyWait(util.IMPLICIT_WAIT, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		try {
 			captureScreenshot(driver,"registration");
 		} catch (IOException e) {

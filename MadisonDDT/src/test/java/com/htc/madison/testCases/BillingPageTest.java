@@ -7,7 +7,6 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import com.htc.madison.pages.Billing;
 import com.htc.madison.pages.OrderConfirmation;
-import com.htc.madison.util.TestUtil;
 import com.htc.madsion.base.TestBase;
 
 public class BillingPageTest extends TestBase{
@@ -15,7 +14,6 @@ public class BillingPageTest extends TestBase{
 	   TestBase testBase;
 	   Billing billing;
 	   OrderConfirmation order;
-	   TestUtil util;
 	   
 	  public BillingPageTest() 
 	  {
@@ -27,7 +25,6 @@ public class BillingPageTest extends TestBase{
 	  {
 		  testBase=new TestBase();
 		  billing=new Billing(driver);
-		  util=new TestUtil();
 		  order=new OrderConfirmation(driver);
 	  }
 

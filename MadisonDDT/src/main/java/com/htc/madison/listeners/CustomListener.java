@@ -5,8 +5,8 @@ import org.testng.ITestListener;
 import org.testng.ITestResult;
 
 import com.aventstack.extentreports.Status;
-import com.htc.extentReport.util.ExtentManager;
-import com.htc.extentReport.util.ExtentTestManager;
+import com.htc.extentReport.utilities.ExtentManager;
+import com.htc.extentReport.utilities.ExtentTestManager;
 
 public class CustomListener implements ITestListener  {
 	

@@ -8,8 +8,8 @@ import org.testng.annotations.Test;
 import com.htc.madison.pages.AccountMenu;
 import com.htc.madison.pages.HomePage;
 import com.htc.madison.pages.LoginPage;
-import com.htc.madison.util.DataProviders;
-import com.htc.madison.util.TestUtil;
+import com.htc.madison.utilities.DataProviders;
+import com.htc.madison.utilities.TestUtil;
 import com.htc.madsion.base.TestBase;
 
 public class LoginPageTest extends TestBase{

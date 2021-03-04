@@ -1,4 +1,4 @@
-package com.htc.extentReport.util;
+package com.htc.extentReport.utilities;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package com.htc.madison.util;
+package com.htc.madison.utilities;
 
 public class TestUtil {
 public long IMPLICIT_WAIT=5;

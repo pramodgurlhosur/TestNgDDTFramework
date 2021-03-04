@@ -5,7 +5,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import com.htc.madison.pages.Cart;
 import com.htc.madison.pages.ProductPage;
-import com.htc.madison.util.TestUtil;
+import com.htc.madison.utilities.TestUtil;
 import com.htc.madsion.base.TestBase;
 
 public class ProductPageTest extends TestBase{

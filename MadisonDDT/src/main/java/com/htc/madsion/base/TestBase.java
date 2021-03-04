@@ -59,7 +59,7 @@ public class TestBase {
 	  
     public void initialization()
     {
-    	TestUtil util=new TestUtil();
+    	
     	String browser=properties.getProperty("browser");
     	if(browser.equals("chrome"))
     	{
@@ -72,8 +72,8 @@ public class TestBase {
     		driver = new FirefoxDriver();
     	}
     	driver.manage().window().maximize();
-    	driver.manage().timeouts().pageLoadTimeout(util.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
-    	driver.manage().timeouts().implicitlyWait(util.IMPLICIT_WAIT, TimeUnit.SECONDS);
+    	driver.manage().timeouts().pageLoadTimeout(15, TimeUnit.SECONDS);
+    	driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
     	driver.get(properties.getProperty("url"));
     }
     

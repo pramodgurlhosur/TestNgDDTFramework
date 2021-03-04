@@ -1,4 +1,4 @@
-package com.htc.madison.util;
+package com.htc.madison.utilities;
 
 import java.io.File;
 import java.io.FileInputStream;

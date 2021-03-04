@@ -6,9 +6,6 @@ import org.testng.annotations.Test;
 import com.htc.madison.pages.Billing;
 import com.htc.madison.pages.Cart;
 import com.htc.madison.pages.CartProceedPage;
-
-import com.htc.madison.pages.ProductPage;
-import com.htc.madison.util.TestUtil;
 import com.htc.madsion.base.TestBase;
 
 public class CartPageTest extends TestBase{
@@ -17,10 +14,8 @@ public class CartPageTest extends TestBase{
 	   Cart cart;
 	   CartProceedPage cartProceed;
 	   Billing billing;
-	   TestUtil util;
-	   
-	  
-	  public CartPageTest() 
+	
+	     public CartPageTest() 
 	  {
 		super();
 	  }
@@ -32,7 +27,6 @@ public class CartPageTest extends TestBase{
 		  cart =new Cart(driver);
 		  cartProceed=new CartProceedPage(driver);
 		  billing=new Billing(driver);
-		  util=new TestUtil();
 	  }
 	  
 	  @Test
