@@ -35,6 +35,7 @@ public class ExtentManager {
         extent.attachReporter(htmlReporter);
         //Set environment details
 		extent.setSystemInfo("OS", "Windows");
+		extent.setSystemInfo("browser", "chrome");
         return extent;
     }
      
