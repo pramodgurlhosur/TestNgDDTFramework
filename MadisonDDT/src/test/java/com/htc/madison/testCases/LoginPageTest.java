@@ -26,10 +26,6 @@ public class LoginPageTest extends TestBase{
 	  @BeforeClass
 	  public void loadPage()
 	  {
-		  if(driver.getCurrentUrl()!=properties.getProperty("url"))
-		  {
-		     driver.get("http://demo-store.seleniumacademy.com/customer/account/login/");
-		  }
 		  login=new LoginPage(driver);
 		  account=new AccountMenu(driver);
 		  util=new TestUtil();
@@ -38,10 +34,8 @@ public class LoginPageTest extends TestBase{
 	    @Test(dataProvider ="madisonSignin_valid",dataProviderClass = DataProviders.class)
 		public void testMadisonSignin_ValidloginCredential_ShouldDisplayDashboard(String ... parameters) throws InterruptedException 
 		{
-	    	
-			String email=parameters[0];
+	    	String email=parameters[0];
 			String password=parameters[1];
-			
 			if(email!=null && password!=null)
 			homePage=login.doLogin(email, password);
 			System.out.println("login valid data passed Succesfully");

@@ -54,7 +54,7 @@ public class TestBase {
 	  @AfterSuite
 	  public void tearDown()
 	  {
-		  //driver.close();
+		  driver.close();
 	  }
 	  
     public void initialization()
