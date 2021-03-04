@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.htc.madison.testCases.RegisterPageTest">
+      <class name="com.htc.madison.testCases.LoginPageTest">
         <methods>
-          <include name="loadPage"/>
           <include name="setUp"/>
+          <include name="testMadisonSignin_ValidloginCredential_ShouldDisplayDashboard" invocation-numbers="0"/>
           <include name="tearDown"/>
-          <include name="testRegistration_entervalidDetails_shouldShowRegistrationMessage" invocation-numbers="0"/>
+          <include name="loadPage"/>
         </methods>
-      </class> <!-- com.htc.madison.testCases.RegisterPageTest -->
+      </class> <!-- com.htc.madison.testCases.LoginPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

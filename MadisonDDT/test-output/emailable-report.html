@@ -9,18 +9,18 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">17,456</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">10,987</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.htc.madison.testCases.RegisterPageTest</td><td><a href="#m0">testRegistration_entervalidDetails_shouldShowRegistrationMessage</a></td><td rowspan="1">1614843199332</td><td rowspan="1">13900</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.htc.madison.testCases.LoginPageTest</td><td><a href="#m0">testMadisonSignin_ValidloginCredential_ShouldDisplayDashboard</a></td><td rowspan="1">1614843631442</td><td rowspan="1">6896</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.htc.madison.testCases.LoginPageTest</td><td><a href="#m1">testMadisonSignin_InValidloginCredential_ShouldDisplayErrorInSigninPage</a></td><td rowspan="1">1614843628522</td><td rowspan="1">2807</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">com.htc.madison.testCases.RegisterPageTest#testRegistration_entervalidDetails_shouldShowRegistrationMessage</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[kevi, ghos, poulso, kevinpoulson@gmail.com, mrrobot, mrrobot]</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[text()=&quot;Log Out&quot;]&quot;}
+<h2>Default test</h2><h3 id="m0">com.htc.madison.testCases.LoginPageTest#testMadisonSignin_ValidloginCredential_ShouldDisplayDashboard</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[kevinpoulson1@gmail.com, mrrobot, Magento Commerce]</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[text()=&quot;Log Out&quot;]&quot;}
   (Session info: chrome=89.0.4389.72)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;DESKTOP-NLOJU8G&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.72, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\PramodVG\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56102}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f3d4b5e2a63987e2a0a33a859604530a
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.72, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\PramodVG\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56158}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f8ac4bc8fda08f6ec810981cc0bf38fd
 *** Element info: {Using=xpath, value=//a[text()=&quot;Log Out&quot;]}
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
@@ -41,7 +41,7 @@ Session ID: f3d4b5e2a63987e2a0a33a859604530a
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy13.click(Unknown Source)
 	at com.htc.madison.pages.AccountMenu.clickLogout(AccountMenu.java:28)
-	at com.htc.madison.testCases.RegisterPageTest.testRegistration_entervalidDetails_shouldShowRegistrationMessage(RegisterPageTest.java:54)
+	at com.htc.madison.testCases.LoginPageTest.testMadisonSignin_ValidloginCredential_ShouldDisplayDashboard(LoginPageTest.java:50)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -71,5 +71,6 @@ Session ID: f3d4b5e2a63987e2a0a33a859604530a
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.htc.madison.testCases.LoginPageTest#testMadisonSignin_InValidloginCredential_ShouldDisplayErrorInSigninPage</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[testDemo@gmail.com, testDemo, Invalid login or password.]</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

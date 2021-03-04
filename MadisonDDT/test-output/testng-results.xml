@@ -1,25 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-03-04T13:03:15 IST" name="Default suite" finished-at="2021-03-04T13:03:33 IST" duration-ms="17456">
+  <suite started-at="2021-03-04T13:10:27 IST" name="Default suite" finished-at="2021-03-04T13:10:38 IST" duration-ms="10987">
     <groups>
     </groups>
-    <test started-at="2021-03-04T13:03:15 IST" name="Default test" finished-at="2021-03-04T13:03:33 IST" duration-ms="17456">
-      <class name="com.htc.madison.testCases.RegisterPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.htc.madison.testCases.RegisterPageTest@6a370f4]" started-at="2021-03-04T13:03:07 IST" name="setUp" finished-at="2021-03-04T13:03:15 IST" duration-ms="8017" status="PASS">
+    <test started-at="2021-03-04T13:10:27 IST" name="Default test" finished-at="2021-03-04T13:10:38 IST" duration-ms="10987">
+      <class name="com.htc.madison.testCases.LoginPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.htc.madison.testCases.LoginPageTest@2abf4075]" started-at="2021-03-04T13:10:19 IST" name="setUp" finished-at="2021-03-04T13:10:27 IST" duration-ms="8126" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="loadPage()[pri:0, instance:com.htc.madison.testCases.RegisterPageTest@6a370f4]" started-at="2021-03-04T13:03:15 IST" name="loadPage" finished-at="2021-03-04T13:03:16 IST" duration-ms="225" status="PASS">
+        <test-method is-config="true" signature="loadPage()[pri:0, instance:com.htc.madison.testCases.LoginPageTest@2abf4075]" started-at="2021-03-04T13:10:27 IST" name="loadPage" finished-at="2021-03-04T13:10:27 IST" duration-ms="59" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadPage -->
-        <test-method signature="testRegistration_entervalidDetails_shouldShowRegistrationMessage([Ljava.lang.String;)[pri:0, instance:com.htc.madison.testCases.RegisterPageTest@6a370f4]" started-at="2021-03-04T13:03:19 IST" name="testRegistration_entervalidDetails_shouldShowRegistrationMessage" data-provider="madison_register" finished-at="2021-03-04T13:03:33 IST" duration-ms="13900" status="FAIL">
+        <test-method signature="testMadisonSignin_InValidloginCredential_ShouldDisplayErrorInSigninPage([Ljava.lang.String;)[pri:0, instance:com.htc.madison.testCases.LoginPageTest@2abf4075]" started-at="2021-03-04T13:10:28 IST" name="testMadisonSignin_InValidloginCredential_ShouldDisplayErrorInSigninPage" data-provider="madisonSignin_invalid" finished-at="2021-03-04T13:10:31 IST" duration-ms="2807" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[Ljava.lang.String;@6145b81e]]>
+                <![CDATA[[Ljava.lang.String;@108d55c4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMadisonSignin_InValidloginCredential_ShouldDisplayErrorInSigninPage -->
+        <test-method signature="testMadisonSignin_ValidloginCredential_ShouldDisplayDashboard([Ljava.lang.String;)[pri:0, instance:com.htc.madison.testCases.LoginPageTest@2abf4075]" started-at="2021-03-04T13:10:31 IST" name="testMadisonSignin_ValidloginCredential_ShouldDisplayDashboard" data-provider="madisonSignin_valid" finished-at="2021-03-04T13:10:38 IST" duration-ms="6896" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@6ff415ad]]>
               </value>
             </param>
           </params>
@@ -31,8 +42,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-NLOJU8G', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.72, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\PramodVG\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56102}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f3d4b5e2a63987e2a0a33a859604530a
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.72, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\PramodVG\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56158}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f8ac4bc8fda08f6ec810981cc0bf38fd
 *** Element info: {Using=xpath, value=//a[text()="Log Out"]}]]>
             </message>
             <full-stacktrace>
@@ -42,8 +53,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-NLOJU8G', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.72, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\PramodVG\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56102}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f3d4b5e2a63987e2a0a33a859604530a
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.72, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\PramodVG\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56158}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f8ac4bc8fda08f6ec810981cc0bf38fd
 *** Element info: {Using=xpath, value=//a[text()="Log Out"]}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
@@ -64,7 +75,7 @@ at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(Def
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 at com.sun.proxy.$Proxy13.click(Unknown Source)
 at com.htc.madison.pages.AccountMenu.clickLogout(AccountMenu.java:28)
-at com.htc.madison.testCases.RegisterPageTest.testRegistration_entervalidDetails_shouldShowRegistrationMessage(RegisterPageTest.java:54)
+at com.htc.madison.testCases.LoginPageTest.testMadisonSignin_ValidloginCredential_ShouldDisplayDashboard(LoginPageTest.java:50)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -98,12 +109,12 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testRegistration_entervalidDetails_shouldShowRegistrationMessage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.htc.madison.testCases.RegisterPageTest@6a370f4]" started-at="2021-03-04T13:03:33 IST" name="tearDown" finished-at="2021-03-04T13:03:34 IST" duration-ms="740" status="PASS">
+        </test-method> <!-- testMadisonSignin_ValidloginCredential_ShouldDisplayDashboard -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.htc.madison.testCases.LoginPageTest@2abf4075]" started-at="2021-03-04T13:10:38 IST" name="tearDown" finished-at="2021-03-04T13:10:38 IST" duration-ms="555" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.htc.madison.testCases.RegisterPageTest -->
+      </class> <!-- com.htc.madison.testCases.LoginPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
