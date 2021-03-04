@@ -19,7 +19,6 @@ import org.testng.annotations.BeforeSuite;
 
 import com.htc.madison.pages.LoginPage;
 import com.htc.madison.pages.RegisterPage;
-import com.htc.madison.util.TestUtil;
 
 
 public class TestBase {
