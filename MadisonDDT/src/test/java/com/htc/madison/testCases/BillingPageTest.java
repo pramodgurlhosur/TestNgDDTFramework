@@ -40,7 +40,7 @@ public class BillingPageTest extends TestBase{
 			billing.setCountryBy(properties.getProperty("country"));
 			billing.setmobilenumberBy(properties.getProperty("mobileNum"));
 			billing.click_billingcontinueBy();
-			Thread.sleep(3000);
+			driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
 			billing.setshippingmethodBy();
 			billing.click_shippingcontinueBy();
 			billing.click_paymentcontinueBy();
@@ -50,7 +50,6 @@ public class BillingPageTest extends TestBase{
 		    Thread.sleep(5000);
 			testBase.captureScreenshot(driver,"orderConfirmation");
 			order=new OrderConfirmation(driver);
-			System.out.println("ORDER PLACED SUCCESSFULLY");
 			System.out.println("ORDER PLACED SUCCESSFULLY");
 			Assert.assertEquals(order.checkOutTitle(),"YOUR ORDER HAS BEEN RECEIVED.");
 			

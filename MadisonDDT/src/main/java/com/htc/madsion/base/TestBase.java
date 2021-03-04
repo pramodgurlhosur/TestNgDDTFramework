@@ -32,7 +32,7 @@ public class TestBase {
     	properties=new Properties();
     	FileInputStream fis = null;
 		try {
-			fis = new FileInputStream("D:\\ECLIPSE WORKSPACE\\MadisonDDT\\src\\main\\resources\\madison.properties");
+			fis = new FileInputStream("src\\main\\resources\\madison.properties");
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -68,7 +68,7 @@ public class TestBase {
     	}
     	else if (browser.equals("firefox"))
     	{
-    		System.setProperty("webdriver.gecko.driver", "D:\\FireFoxDriverGECKOSETUP\\geckodriver.exe");
+    		System.setProperty("webdriver.gecko.driver", properties.getProperty("firefox_path"));
     		driver = new FirefoxDriver();
     	}
     	driver.manage().window().maximize();
@@ -83,6 +83,6 @@ public class TestBase {
         fileName =fileName+"_"+ d.toString().replace(":", "_").replace(" ", "_") + ".png";
            //colon and space is not supported in file naming format. 
 		File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-        FileHandler.copy(screenshot, new File("D:\\ECLIPSE WORKSPACE\\MadisonDDT\\src\\main\\java\\com\\htc\\madision\\screenshots\\" + fileName));
+        FileHandler.copy(screenshot, new File("src\\main\\java\\com\\htc\\madision\\screenshots\\" + fileName));
 	}
    }
