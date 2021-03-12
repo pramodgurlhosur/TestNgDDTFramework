@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Selenium Academy]">
+  <listeners>
+    <listener class-name="com.htc.utility.TestListener"/>
+  </listeners>
+  <test thread-count="5" name="Selenium Academy Test(failed)">
+    <parameter name="firstName" value="Tom"/>
+    <parameter name="lastName" value="Jerry"/>
+    <parameter name="confirmPasscode" value="abc123456"/>
+    <parameter name="appURL" value="http://demo-store.seleniumacademy.com/"/>
+    <parameter name="middleName" value="A"/>
+    <parameter name="message" value="Thank you for registering with Madison Island."/>
+    <parameter name="email" value="tom@htc.com"/>
+    <parameter name="passcode" value="abc123456"/>
+    <parameter name="browserType" value="chrome"/>
+    <classes>
+      <class name="com.htc.seleniumacademyPOM.test.RegistrationPageTest">
+        <methods>
+          <include name="testCreateAccount_fillDetails_ShouldCreateNewAccountsuccessfully" invocation-numbers="0"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="loadProptiesFile"/>
+        </methods>
+      </class> <!-- com.htc.seleniumacademyPOM.test.RegistrationPageTest -->
+      <class name="com.htc.seleniumacademyPOM.test.CheckOutTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="testLoginPage_enterCredantials_shouldLoginSuccessful"/>
+          <include name="loadProptiesFile"/>
+        </methods>
+      </class> <!-- com.htc.seleniumacademyPOM.test.CheckOutTest -->
+    </classes>
+  </test> <!-- Selenium Academy Test(failed) -->
+</suite> <!-- Failed suite [Selenium Academy] -->

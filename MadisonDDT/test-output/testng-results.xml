@@ -2,16 +2,16 @@
 <testng-results ignored="10" total="17" passed="1" failed="6" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-03-04T13:26:24 IST" name="Madison_NewUserRegistration_productPurchase" finished-at="2021-03-04T13:26:33 IST" duration-ms="8207">
+  <suite started-at="2021-03-04T14:59:45 IST" name="Madison_NewUserRegistration_productPurchase" finished-at="2021-03-04T14:59:53 IST" duration-ms="8766">
     <groups>
     </groups>
-    <test started-at="2021-03-04T13:26:24 IST" name="NewRegistration_ValidInvalidLogin_purchaseOrderTest" finished-at="2021-03-04T13:26:33 IST" duration-ms="8207">
+    <test started-at="2021-03-04T14:59:45 IST" name="NewRegistration_ValidInvalidLogin_purchaseOrderTest" finished-at="2021-03-04T14:59:53 IST" duration-ms="8766">
       <class name="com.htc.madison.testCases.BillingPageTest">
-        <test-method is-config="true" signature="loadPage()[pri:0, instance:com.htc.madison.testCases.BillingPageTest@65f095f8]" started-at="2021-03-04T13:26:33 IST" name="loadPage" finished-at="2021-03-04T13:26:33 IST" duration-ms="6" status="PASS">
+        <test-method is-config="true" signature="loadPage()[pri:0, instance:com.htc.madison.testCases.BillingPageTest@65f095f8]" started-at="2021-03-04T14:59:53 IST" name="loadPage" finished-at="2021-03-04T14:59:53 IST" duration-ms="20" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadPage -->
-        <test-method signature="testBillingPaAndOrderPage_enterValidBillingDetails_shouldAllowToCheckout()[pri:0, instance:com.htc.madison.testCases.BillingPageTest@65f095f8]" started-at="2021-03-04T13:26:33 IST" name="testBillingPaAndOrderPage_enterValidBillingDetails_shouldAllowToCheckout" finished-at="2021-03-04T13:26:33 IST" duration-ms="5" status="FAIL">
+        <test-method signature="testBillingPaAndOrderPage_enterValidBillingDetails_shouldAllowToCheckout()[pri:0, instance:com.htc.madison.testCases.BillingPageTest@65f095f8]" started-at="2021-03-04T14:59:53 IST" name="testBillingPaAndOrderPage_enterValidBillingDetails_shouldAllowToCheckout" finished-at="2021-03-04T14:59:53 IST" duration-ms="3" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <message>
               <![CDATA[Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null]]>
@@ -59,11 +59,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- testBillingPaAndOrderPage_enterValidBillingDetails_shouldAllowToCheckout -->
       </class> <!-- com.htc.madison.testCases.BillingPageTest -->
       <class name="com.htc.madison.testCases.ProductPageTest">
-        <test-method is-config="true" signature="loadPage()[pri:0, instance:com.htc.madison.testCases.ProductPageTest@3a6bb9bf]" started-at="2021-03-04T13:26:32 IST" name="loadPage" finished-at="2021-03-04T13:26:33 IST" duration-ms="34" status="PASS">
+        <test-method is-config="true" signature="loadPage()[pri:0, instance:com.htc.madison.testCases.ProductPageTest@3a6bb9bf]" started-at="2021-03-04T14:59:53 IST" name="loadPage" finished-at="2021-03-04T14:59:53 IST" duration-ms="36" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadPage -->
-        <test-method signature="testProductPage_clickOnTheProduct_shouldShowTheProductetails()[pri:0, instance:com.htc.madison.testCases.ProductPageTest@3a6bb9bf]" started-at="2021-03-04T13:26:33 IST" name="testProductPage_clickOnTheProduct_shouldShowTheProductetails" finished-at="2021-03-04T13:26:33 IST" duration-ms="11" status="FAIL">
+        <test-method signature="testProductPage_clickOnTheProduct_shouldShowTheProductetails()[pri:0, instance:com.htc.madison.testCases.ProductPageTest@3a6bb9bf]" started-at="2021-03-04T14:59:53 IST" name="testProductPage_clickOnTheProduct_shouldShowTheProductetails" finished-at="2021-03-04T14:59:53 IST" duration-ms="4" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <message>
               <![CDATA[Cannot invoke "org.openqa.selenium.JavascriptExecutor.executeScript(String, Object[])" because "executor" is null]]>
@@ -108,11 +108,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- testProductPage_clickOnTheProduct_shouldShowTheProductetails -->
       </class> <!-- com.htc.madison.testCases.ProductPageTest -->
       <class name="com.htc.madison.testCases.HomePageTest">
-        <test-method is-config="true" signature="loadPage()[pri:0, instance:com.htc.madison.testCases.HomePageTest@10959ece]" started-at="2021-03-04T13:26:32 IST" name="loadPage" finished-at="2021-03-04T13:26:32 IST" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="loadPage()[pri:0, instance:com.htc.madison.testCases.HomePageTest@10959ece]" started-at="2021-03-04T14:59:53 IST" name="loadPage" finished-at="2021-03-04T14:59:53 IST" duration-ms="23" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadPage -->
-        <test-method signature="testHomePage_searchProduct_shouldShowTheProduct([Ljava.lang.String;)[pri:0, instance:com.htc.madison.testCases.HomePageTest@10959ece]" started-at="2021-03-04T13:26:32 IST" name="testHomePage_searchProduct_shouldShowTheProduct" data-provider="madisonSignin_valid" finished-at="2021-03-04T13:26:32 IST" duration-ms="7" status="FAIL">
+        <test-method signature="testHomePage_searchProduct_shouldShowTheProduct([Ljava.lang.String;)[pri:0, instance:com.htc.madison.testCases.HomePageTest@10959ece]" started-at="2021-03-04T14:59:53 IST" name="testHomePage_searchProduct_shouldShowTheProduct" data-provider="madisonSignin_valid" finished-at="2021-03-04T14:59:53 IST" duration-ms="2" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -163,11 +163,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- testHomePage_searchProduct_shouldShowTheProduct -->
       </class> <!-- com.htc.madison.testCases.HomePageTest -->
       <class name="com.htc.madison.testCases.LoginPageTest">
-        <test-method is-config="true" signature="loadPage()[pri:0, instance:com.htc.madison.testCases.LoginPageTest@68c72235]" started-at="2021-03-04T13:26:32 IST" name="loadPage" finished-at="2021-03-04T13:26:32 IST" duration-ms="8" status="PASS">
+        <test-method is-config="true" signature="loadPage()[pri:0, instance:com.htc.madison.testCases.LoginPageTest@68c72235]" started-at="2021-03-04T14:59:53 IST" name="loadPage" finished-at="2021-03-04T14:59:53 IST" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadPage -->
-        <test-method signature="testMadisonSignin_ValidloginCredential_ShouldDisplayDashboard([Ljava.lang.String;)[pri:0, instance:com.htc.madison.testCases.LoginPageTest@68c72235]" started-at="2021-03-04T13:26:32 IST" name="testMadisonSignin_ValidloginCredential_ShouldDisplayDashboard" data-provider="madisonSignin_valid" finished-at="2021-03-04T13:26:32 IST" duration-ms="5" status="FAIL">
+        <test-method signature="testMadisonSignin_ValidloginCredential_ShouldDisplayDashboard([Ljava.lang.String;)[pri:0, instance:com.htc.madison.testCases.LoginPageTest@68c72235]" started-at="2021-03-04T14:59:53 IST" name="testMadisonSignin_ValidloginCredential_ShouldDisplayDashboard" data-provider="madisonSignin_valid" finished-at="2021-03-04T14:59:53 IST" duration-ms="5" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -221,7 +221,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMadisonSignin_ValidloginCredential_ShouldDisplayDashboard -->
-        <test-method signature="testMadisonSignin_InValidloginCredential_ShouldDisplayErrorInSigninPage([Ljava.lang.String;)[pri:0, instance:com.htc.madison.testCases.LoginPageTest@68c72235]" started-at="2021-03-04T13:26:32 IST" name="testMadisonSignin_InValidloginCredential_ShouldDisplayErrorInSigninPage" data-provider="madisonSignin_invalid" finished-at="2021-03-04T13:26:32 IST" duration-ms="5" status="FAIL">
+        <test-method signature="testMadisonSignin_InValidloginCredential_ShouldDisplayErrorInSigninPage([Ljava.lang.String;)[pri:0, instance:com.htc.madison.testCases.LoginPageTest@68c72235]" started-at="2021-03-04T14:59:53 IST" name="testMadisonSignin_InValidloginCredential_ShouldDisplayErrorInSigninPage" data-provider="madisonSignin_invalid" finished-at="2021-03-04T14:59:53 IST" duration-ms="3" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -277,15 +277,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- testMadisonSignin_InValidloginCredential_ShouldDisplayErrorInSigninPage -->
       </class> <!-- com.htc.madison.testCases.LoginPageTest -->
       <class name="com.htc.madison.testCases.RegisterPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.htc.madison.testCases.RegisterPageTest@6b8ca3c8]" started-at="2021-03-04T13:26:15 IST" name="setUp" finished-at="2021-03-04T13:26:24 IST" duration-ms="9540" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.htc.madison.testCases.RegisterPageTest@6b8ca3c8]" started-at="2021-03-04T14:59:37 IST" name="setUp" finished-at="2021-03-04T14:59:45 IST" duration-ms="7404" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="loadPage()[pri:0, instance:com.htc.madison.testCases.RegisterPageTest@6b8ca3c8]" started-at="2021-03-04T13:26:24 IST" name="loadPage" finished-at="2021-03-04T13:26:24 IST" duration-ms="33" status="PASS">
+        <test-method is-config="true" signature="loadPage()[pri:0, instance:com.htc.madison.testCases.RegisterPageTest@6b8ca3c8]" started-at="2021-03-04T14:59:45 IST" name="loadPage" finished-at="2021-03-04T14:59:45 IST" duration-ms="159" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadPage -->
-        <test-method signature="testRegistration_entervalidDetails_shouldShowRegistrationMessage([Ljava.lang.String;)[pri:0, instance:com.htc.madison.testCases.RegisterPageTest@6b8ca3c8]" started-at="2021-03-04T13:26:26 IST" name="testRegistration_entervalidDetails_shouldShowRegistrationMessage" data-provider="madison_register" finished-at="2021-03-04T13:26:32 IST" duration-ms="6604" status="PASS">
+        <test-method signature="testRegistration_entervalidDetails_shouldShowRegistrationMessage([Ljava.lang.String;)[pri:0, instance:com.htc.madison.testCases.RegisterPageTest@6b8ca3c8]" started-at="2021-03-04T14:59:46 IST" name="testRegistration_entervalidDetails_shouldShowRegistrationMessage" data-provider="madison_register" finished-at="2021-03-04T14:59:53 IST" duration-ms="6498" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -296,17 +296,17 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRegistration_entervalidDetails_shouldShowRegistrationMessage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.htc.madison.testCases.RegisterPageTest@6b8ca3c8]" started-at="2021-03-04T13:26:33 IST" name="tearDown" finished-at="2021-03-04T13:26:34 IST" duration-ms="375" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.htc.madison.testCases.RegisterPageTest@6b8ca3c8]" started-at="2021-03-04T14:59:54 IST" name="tearDown" finished-at="2021-03-04T14:59:54 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.htc.madison.testCases.RegisterPageTest -->
       <class name="com.htc.madison.testCases.CartPageTest">
-        <test-method is-config="true" signature="loadPage()[pri:0, instance:com.htc.madison.testCases.CartPageTest@34f7cfd9]" started-at="2021-03-04T13:26:33 IST" name="loadPage" finished-at="2021-03-04T13:26:33 IST" duration-ms="13" status="PASS">
+        <test-method is-config="true" signature="loadPage()[pri:0, instance:com.htc.madison.testCases.CartPageTest@34f7cfd9]" started-at="2021-03-04T14:59:53 IST" name="loadPage" finished-at="2021-03-04T14:59:53 IST" duration-ms="34" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadPage -->
-        <test-method signature="testCartPage_chooseDesired_shouldAllowToSelect()[pri:0, instance:com.htc.madison.testCases.CartPageTest@34f7cfd9]" started-at="2021-03-04T13:26:33 IST" name="testCartPage_chooseDesired_shouldAllowToSelect" finished-at="2021-03-04T13:26:33 IST" duration-ms="4" status="FAIL">
+        <test-method signature="testCartPage_chooseDesired_shouldAllowToSelect()[pri:0, instance:com.htc.madison.testCases.CartPageTest@34f7cfd9]" started-at="2021-03-04T14:59:53 IST" name="testCartPage_chooseDesired_shouldAllowToSelect" finished-at="2021-03-04T14:59:53 IST" duration-ms="2" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <message>
               <![CDATA[Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null]]>

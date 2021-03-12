@@ -52,7 +52,6 @@ public class RegisterPageTest extends TestBase {
 		}
 		account.clickAccountToLogout();
 		account.clickLogout();
-		
 		Assert.assertEquals(register.assertSuccessMsg(), "WELCOME");
 	}
  }
