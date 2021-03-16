@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Madison_NewUserRegistration_productPurchase]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="com.htc.extentReport.CustomListener"/>
+  </listeners>
+  <test thread-count="5" name="NewRegistration_ValidInvalidLogin_purchaseOrderTest(failed)">
+    <classes>
+      <class name="com.htc.test.LoginTest">
+        <methods>
+          <include name="start"/>
+          <include name="getDriver"/>
+          <include name="testLoginPage_validInvalidMessage_enterValidAndInvalidDetails"/>
+          <include name="browserSetup"/>
+          <include name="takescreenshot"/>
+        </methods>
+      </class> <!-- com.htc.test.LoginTest -->
+    </classes>
+  </test> <!-- NewRegistration_ValidInvalidLogin_purchaseOrderTest(failed) -->
+</suite> <!-- Failed suite [Madison_NewUserRegistration_productPurchase] -->
