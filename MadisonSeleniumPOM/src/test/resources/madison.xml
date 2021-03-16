@@ -8,7 +8,7 @@
 	<test thread-count="5" name="NewRegistration_ValidInvalidLogin_purchaseOrderTest">
 		<classes>
 	    	<class name="com.htc.test.RegistrationTest"></class>          
-	 		<class name="com.htc.test.LoginTest"></class>
+	 		<!-- <class name="com.htc.test.LoginTest"></class> -->
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

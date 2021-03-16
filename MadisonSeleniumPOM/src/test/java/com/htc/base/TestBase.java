@@ -42,7 +42,7 @@ public class TestBase {
 		properties = new Properties();
 		FileInputStream fis = null;
 		try {
-			fis = new FileInputStream("..//MadisonSeleniumPOM//src//test//resources//madison.properties");
+			fis = new FileInputStream("src//test//resources//madison.properties");
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
