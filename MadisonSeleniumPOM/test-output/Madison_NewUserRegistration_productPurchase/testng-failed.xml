@@ -7,15 +7,15 @@
   </listeners>
   <test thread-count="5" name="NewRegistration_ValidInvalidLogin_purchaseOrderTest(failed)">
     <classes>
-      <class name="com.htc.test.LoginTest">
+      <class name="com.htc.test.RegistrationTest">
         <methods>
           <include name="start"/>
           <include name="getDriver"/>
-          <include name="testLoginPage_validInvalidMessage_enterValidAndInvalidDetails"/>
           <include name="browserSetup"/>
+          <include name="testRegistrationPage_successMessage_enterValidDetails" invocation-numbers="1"/>
           <include name="takescreenshot"/>
         </methods>
-      </class> <!-- com.htc.test.LoginTest -->
+      </class> <!-- com.htc.test.RegistrationTest -->
     </classes>
   </test> <!-- NewRegistration_ValidInvalidLogin_purchaseOrderTest(failed) -->
 </suite> <!-- Failed suite [Madison_NewUserRegistration_productPurchase] -->
