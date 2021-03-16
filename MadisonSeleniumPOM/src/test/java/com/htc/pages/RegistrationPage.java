@@ -53,6 +53,12 @@ public class RegistrationPage {
 		    catch (NoSuchElementException nsee) {
 			System.out.println(nsee.getStackTrace());
 		   }
+		catch (Exception exception) {
+			System.out.println(exception.getStackTrace());
+		}
+		catch (Throwable throwable) {
+			System.out.println(throwable.getStackTrace());
+		}
     }
 
         public String assertSuccessMessage() {

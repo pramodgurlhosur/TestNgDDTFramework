@@ -28,9 +28,9 @@ public class BillingPage {
 	private WebElement mobilenumber;
 	@FindBy(xpath = "(//span[text()=\"Continue\"])[1]")
 	private WebElement clickBillingcontinue;
-	@FindBy(xpath = "(//span[text()=\"Continue\"])[2]")           //button[@onclick='payment.save()']
+	@FindBy(xpath = "(//span[text()=\"Continue\"])[2]")          
 	private WebElement clickPaymentcontinue;
-	@FindBy(xpath = "//span[text()=\"Place Order\"] ")         //button[@class='button btn-checkout']
+	@FindBy(xpath = "//span[text()=\"Place Order\"] ")         
 	private WebElement checkOut;
 
 	public BillingPage(WebDriver driver) {
@@ -50,13 +50,16 @@ public class BillingPage {
 			this.pincode.sendKeys(pincode);
 			this.mobilenumber.sendKeys(mobilenumber);
 			clickBillingcontinue.click();
-			/*
-			 * clickShippingmethod.click(); clickShippingcontinue.click();
-			 */
 			clickPaymentcontinue.click();
 			checkOut.click();
 		} catch (NoSuchElementException nsee) {
 			System.out.println(nsee.getStackTrace());
+		}
+		catch (Exception exception) {
+			System.out.println(exception.getStackTrace());
+		}
+		catch (Throwable throwable) {
+			System.out.println(throwable.getStackTrace());
 		}
 
 	}
