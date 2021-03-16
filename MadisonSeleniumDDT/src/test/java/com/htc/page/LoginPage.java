@@ -35,20 +35,10 @@ public class LoginPage {
 		this.clickBooksOption();
 	}
 	public boolean isDashbordDisplayed() {
-		System.out.println("is dashboard start : "+dashboard);
-		boolean isDisplayed=false;
-		System.out.println("is dashboard : "+isDisplayed);
+		boolean flag=false;
 		WebElement dash=driver.findElement(dashboard);
-		try {
-			
-			util.waitForVisibilityOfElements(driver, dashboard);
-		}
-		catch(ElementNotVisibleException e){
-			e.printStackTrace();
-		}
-		isDisplayed=dash.isDisplayed();
-		System.out.println("is dashboard : "+isDisplayed);
-		return isDisplayed;
+		flag=dash.isDisplayed();
+		return flag;
 	}
 
 }

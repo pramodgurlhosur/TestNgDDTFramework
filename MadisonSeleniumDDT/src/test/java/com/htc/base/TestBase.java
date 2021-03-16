@@ -50,7 +50,7 @@ public class TestBase {
 		Reporter.log("Setting up reports and Test is getting ready", true);
 		data=new Properties();
 		try {
-			FileInputStream fis=new FileInputStream("D:\\ECLIPSE WORKSPACE\\MadisonSeleniumDDT\\src\\test\\resources\\madisonData.properties");
+			FileInputStream fis=new FileInputStream("src\\test\\resources\\madisonData.properties");
 			data.load(fis);
 		}  catch (IOException e) {
 			// TODO Auto-generated catch block

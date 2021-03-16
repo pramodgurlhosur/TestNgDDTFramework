@@ -1,13 +1,11 @@
 package com.htc.seleniumUtility;
 
-import java.io.IOException;
-
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
+
 import com.aventstack.extentreports.ExtentTest;
-import com.aventstack.extentreports.MediaEntityBuilder;
 
 public class TestNGListerners implements ITestListener{
 	protected WebDriver driver;

@@ -27,7 +27,7 @@
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
 			<version>7.3.0</version>
-			<scope>test</scope>
+			<scope>compile</scope>
 			
 		</dependency>
 
@@ -65,8 +65,11 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>3.0.0-M5</version>
-				<configuration> <suiteXmlFiles> <suiteXmlFile>D:\ECLIPSE WORKSPACE\MadisonSeleniumDDT\src\test\resources\madsionDDT.xml</suiteXmlFile> 
-					</suiteXmlFiles> </configuration>
+				<configuration>
+				 <suiteXmlFiles> 
+				      <suiteXmlFile>src\test\resources\madsionDDT.xml</suiteXmlFile> 
+					</suiteXmlFiles> 
+		     </configuration>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>

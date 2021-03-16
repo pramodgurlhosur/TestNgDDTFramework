@@ -18,7 +18,7 @@ public class MadisonDataProvider {
 		data=new Properties();
 		FileInputStream fis = null;
 		try {
-			fis = new FileInputStream("D:\\ECLIPSE WORKSPACE\\MadisonSeleniumDDT\\src\\test\\resources\\madisonData.properties");
+			fis = new FileInputStream("src\\test\\resources\\madisonData.properties");
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
