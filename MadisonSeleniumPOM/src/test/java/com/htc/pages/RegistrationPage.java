@@ -1,11 +1,11 @@
 package com.htc.pages;
 
 import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
 import com.htc.utilities.Util;
 
 public class RegistrationPage {
@@ -25,9 +25,9 @@ public class RegistrationPage {
 	@FindBy(xpath = "//input[@id='password']")
 	private WebElement password;
 	@FindBy(xpath = "//input[@id='confirmation']")
-	private WebElement confirmpassword;
+	private WebElement confirmPassword;
 	@FindBy(xpath = "//button[@class='button']")
-	private WebElement clickRegisterbutton;
+	private WebElement clickRegisterButton;
 	@FindBy(xpath = "//span[contains(text(),'Thank you for registering with Madison Island.')]")
 	private WebElement successMessage;
 
@@ -47,13 +47,13 @@ public class RegistrationPage {
 			this.lastname.sendKeys(lastname);
 			this.emailid.sendKeys(emailid);
 			this.password.sendKeys(password);
-			this.confirmpassword.sendKeys(confirmpassword);
-			clickRegisterbutton.click();
+			this.confirmPassword.sendKeys(confirmpassword);
+			clickRegisterButton.click();
 		   } 
 		    catch (NoSuchElementException nsee) {
 			System.out.println(nsee.getStackTrace());
 		   }
-		catch (Exception exception) {
+		  catch (StaleElementReferenceException  exception) {
 			System.out.println(exception.getStackTrace());
 		}
 		catch (Throwable throwable) {
@@ -61,7 +61,8 @@ public class RegistrationPage {
 		}
     }
 
-        public String assertSuccessMessage() {
+        public String assertSuccessMessage()
+        {
 		return successMessage.getText();
-	}
+	    }
 }

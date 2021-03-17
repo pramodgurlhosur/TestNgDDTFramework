@@ -4,6 +4,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -25,12 +26,19 @@ public class Util {
 
 	public static void explicitWait(WebElement element, WebDriver driver) {
 		try {
-			WebDriverWait wait = new WebDriverWait(driver, 30);
+			WebDriverWait wait = new WebDriverWait(driver, 20);
 			if (!element.isDisplayed()) {
 				wait.until(ExpectedConditions.visibilityOf(element));
 			}
 		} catch (NoSuchElementException no) {
 			no.printStackTrace();
 		}
+		  catch (StaleElementReferenceException  exception) {
+				System.out.println(exception.getStackTrace());
+			}
+			catch (Throwable throwable) {
+				System.out.println(throwable.getStackTrace());
+			}
+	    }
 	}
-}
+

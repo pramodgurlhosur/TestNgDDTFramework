@@ -1,6 +1,7 @@
 package com.htc.pages;
 
 import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -16,15 +17,15 @@ public class LoginPage {
 	@FindBy(xpath = "//div[@class='links']//ul//li[@class=' last']//a")
 	private WebElement login;
 	@FindBy(xpath = "//input[@id='email']")
-	private WebElement emailid;
+	private WebElement emailId;
 	@FindBy(xpath = "//input[@id='pass']")
 	private WebElement password;
 	@FindBy(xpath = "//button[@id='send2']")
-	private WebElement loginbutton;
+	private WebElement loginButton;
 	@FindBy(xpath = "//a[@title='Log Out']")
-	private WebElement logoutbutton;
+	private WebElement logoutButton;
 	@FindBy(xpath = "//div[@class='welcome-msg']//p[@class='hello']//strong")
-	private WebElement assertsuccessMsg;
+	private WebElement assertSuccessMsg;
 
 	public LoginPage(WebDriver driver) {
 		this.driver = driver;
@@ -36,13 +37,13 @@ public class LoginPage {
 			Util.explicitWait(account, driver);
 			account.click();
 			login.click();
-			this.emailid.sendKeys(email);
+			this.emailId.sendKeys(email);
 			this.password.sendKeys(password);
-			this.loginbutton.click();
+			this.loginButton.click();
 		} catch (NoSuchElementException nsee) {
 			System.out.println(nsee.getStackTrace());
 		}
-		catch (Exception exception) {
+		catch (StaleElementReferenceException  exception) {
 			System.out.println(exception.getStackTrace());
 		}
 		catch (Throwable throwable) {
@@ -56,11 +57,11 @@ public class LoginPage {
 	}
 
 	public String assertLogin() {
-		return assertsuccessMsg.getText();
+		return assertSuccessMsg.getText();
 	}
 
 	public void Logout() {
 		account.click();
-		logoutbutton.click();
+		logoutButton.click();
 	}
 }

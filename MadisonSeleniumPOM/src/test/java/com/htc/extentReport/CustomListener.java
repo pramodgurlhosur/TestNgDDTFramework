@@ -35,7 +35,7 @@ public class CustomListener extends TestBase implements ITestListener{
 		 Object testClass = result.getInstance();
 		    WebDriver driver = ((TestBase) testClass).getDriver();
 		    try {
-				Screenshot.screenShot(driver, GlobalVariables.PASSED_SCREENSHOTS,result.getMethod().getMethodName());
+				Screenshot.captureScreenShot(driver, GlobalVariables.PASSED_SCREENSHOTS,result.getMethod().getMethodName());
 			} catch (IOException | InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -48,12 +48,11 @@ public class CustomListener extends TestBase implements ITestListener{
 		Object testClass = result.getInstance();
 	    WebDriver driver = ((TestBase) testClass).getDriver();
 	    try {
-			Screenshot.screenShot(driver, GlobalVariables.FAILED_SCREENSHOTS,result.getMethod().getMethodName());
+			Screenshot.captureScreenShot(driver, GlobalVariables.FAILED_SCREENSHOTS,result.getMethod().getMethodName());
 		} catch (IOException | InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
 	}
 
 	public void onTestSkipped(ITestResult result) {

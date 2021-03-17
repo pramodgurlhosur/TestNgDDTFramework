@@ -1,11 +1,11 @@
 package com.htc.pages;
 
 import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
 import com.htc.utilities.Util;
 
 public class BillingPage {
@@ -26,11 +26,11 @@ public class BillingPage {
 	private WebElement pincode;
 	@FindBy(xpath = "//input[@id='billing:telephone']")
 	private WebElement mobilenumber;
-	@FindBy(xpath = "(//span[text()=\"Continue\"])[1]")
+	@FindBy(xpath = "(//button[@type=\"button\"])[2]")
 	private WebElement clickBillingcontinue;
-	@FindBy(xpath = "(//span[text()=\"Continue\"])[2]")          
+	@FindBy(xpath = "(//button[@type=\"button\"])[3]")          
 	private WebElement clickPaymentcontinue;
-	@FindBy(xpath = "//span[text()=\"Place Order\"] ")         
+	@FindBy(xpath = "(//button[@type=\"submit\"])[2]")         
 	private WebElement checkOut;
 
 	public BillingPage(WebDriver driver) {
@@ -50,12 +50,15 @@ public class BillingPage {
 			this.pincode.sendKeys(pincode);
 			this.mobilenumber.sendKeys(mobilenumber);
 			clickBillingcontinue.click();
+			Util.explicitWait(clickPaymentcontinue, driver);
 			clickPaymentcontinue.click();
+			Util.explicitWait(checkOut, driver);
 			checkOut.click();
+			
 		} catch (NoSuchElementException nsee) {
 			System.out.println(nsee.getStackTrace());
 		}
-		catch (Exception exception) {
+		catch (StaleElementReferenceException  exception) {
 			System.out.println(exception.getStackTrace());
 		}
 		catch (Throwable throwable) {

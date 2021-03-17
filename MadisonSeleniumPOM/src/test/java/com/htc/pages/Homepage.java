@@ -1,6 +1,7 @@
 package com.htc.pages;
 
 import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -15,7 +16,7 @@ public class Homepage {
 	@FindBy(xpath = "//div[@class='welcome-msg']//p[@class='hello']//strong")
 	private WebElement assertElement;
 	@FindBy(xpath = "//input[@id='search']")
-	private WebElement searchproducts;
+	private WebElement searchProducts;
 	@FindBy(xpath = "//button[@class='button search-button']")
 	private WebElement clickSearch;
 
@@ -28,13 +29,14 @@ public class Homepage {
 		try {
 			Util.explicitWait(dashboard, driver);
 			dashboard.click();
-			searchproducts.click();
-			searchproducts.sendKeys(search);
+			searchProducts.click();
+			searchProducts.sendKeys(search);
 			clickSearch.click();
-		} catch (NoSuchElementException nsee) {
+		} 
+		catch (NoSuchElementException nsee) {
 			System.out.println(nsee.getStackTrace());
 		}
-		catch (Exception exception) {
+		catch (StaleElementReferenceException  exception) {
 			System.out.println(exception.getStackTrace());
 		}
 		catch (Throwable throwable) {

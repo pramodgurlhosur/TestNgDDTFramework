@@ -33,12 +33,11 @@ public class TestBase {
 	protected ShoppingCartPage shop = null;
 	protected BillingPage billing = null;
 	protected OrderConfirmationPage order = null;
+    protected Screenshot screenshot = null;
+    public Properties properties = null;
 
-	protected Screenshot screenshot = null;
-
-	public Properties properties = null;
-
-	public TestBase() {
+	public TestBase() 
+	{
 		properties = new Properties();
 		FileInputStream fis = null;
 		try {
@@ -55,18 +54,18 @@ public class TestBase {
 		}
 	}
 
-	@BeforeSuite()
-	@Parameters("browser")
+	@BeforeSuite
+	@Parameters("platform")
 	public void start(String browser) {
 
 		this.driver = BrowserFactory.selectWebDriver(browser);
 		this.driver.get(GlobalVariables.URL);
 		this.driver.manage().window().maximize();
-		this.driver.manage().timeouts().implicitlyWait(GlobalVariables.TIME_IN_SECONDS, TimeUnit.SECONDS);
+		this.driver.manage().timeouts().implicitlyWait(GlobalVariables.IMPLICIT_WAIT_IN_SECONDS, TimeUnit.SECONDS);
 	}
 
 	@BeforeClass
-	public void browserSetup() {
+	public void createPageObjects() {
 		register=new RegistrationPage(driver);
 		login = new LoginPage(driver);
 		home = new Homepage(driver);
@@ -77,21 +76,15 @@ public class TestBase {
 		order = new OrderConfirmationPage(driver);
 	}
 
-	@BeforeTest
-	public WebDriver getDriver() {
-		return this.driver;
-     }
-
-	@AfterMethod
-	public void takescreenshot(ITestResult result) throws IOException, InterruptedException 
+	  @BeforeTest 
+	  public WebDriver getDriver() 
+	  { 
+		  return this.driver; 
+	  }
+	 
+    @AfterMethod
+	public void performlogOutOperaton()
 	{
-		System.out.println("Taking screenhots in After Method");
-		if (ITestResult.FAILURE == result.getStatus()) {
-			Screenshot.screenShot(driver, GlobalVariables.FAILED_SCREENSHOTS,result.getMethod().getMethodName());
-			
-		} else if (ITestResult.SUCCESS == result.getStatus()) {
-			Screenshot.screenShot(driver, GlobalVariables.PASSED_SCREENSHOTS,result.getMethod().getMethodName());
-			login.Logout();
-		}
-	}
+		login.Logout();
+    }
 }

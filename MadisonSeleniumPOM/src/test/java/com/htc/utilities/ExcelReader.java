@@ -36,12 +36,9 @@ public class ExcelReader {
 			for (int col = 0; col < colCount; col++) {
 				dataMap.put(loginData.getRow(0).getCell(col).toString(),
 						loginData.getRow(row + 1).getCell(col).toString());
-
-			}
+        }
 			obj[row][0] = dataMap;
 		}
-
-		return obj;
-
-	}
+         return obj;
+     }
 }

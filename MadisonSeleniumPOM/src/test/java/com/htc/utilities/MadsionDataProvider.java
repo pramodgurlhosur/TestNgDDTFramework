@@ -12,10 +12,10 @@ public class MadsionDataProvider {
 		Object[][] loginDataSet = null;
 		ExcelReader ref = new ExcelReader(GlobalVariables.EXCEL_DATA_PATH);
 		if (m.getName().equals("testRegistrationPage_successMessage_enterValidDetails")) {
-			loginDataSet = ref.getDataUsingMap(GlobalVariables.REGISTRATION_SHEETNAME);
+			loginDataSet = ref.getDataUsingMap(GlobalVariables.REGISTRATION_SHEET);
 		} 
-		else if (m.getName().equals("testLoginPage_validInvalidMessage_enterValidAndInvalidDetails")) {
-			loginDataSet = ref.getDataUsingMap(GlobalVariables.LOGIN_SHEETNAME);
+		else if (m.getName().equals("testLoginAndCheckOutPage_shouldDisplayValidInvalidMessage_enterValidAndInvalidDetails")) {
+			loginDataSet = ref.getDataUsingMap(GlobalVariables.LOGIN_PURCHASE_SHEET);
 		}
 
 		return loginDataSet;

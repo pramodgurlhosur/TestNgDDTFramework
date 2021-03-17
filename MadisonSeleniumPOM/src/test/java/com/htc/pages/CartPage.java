@@ -1,6 +1,7 @@
 package com.htc.pages;
 
 import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -12,7 +13,7 @@ public class CartPage {
 	@FindBy(xpath = "//input[@id=\"qty\"]")
 	private WebElement quantity;
 	@FindBy(xpath = "(//button[@class='button btn-cart'])[2]")
-	private WebElement ClickAddtocart;
+	private WebElement ClickAddToCart;
 
 	public CartPage(WebDriver driver) {
 		this.driver = driver;
@@ -25,11 +26,12 @@ public class CartPage {
 			quantity.click();
 			quantity.clear();
 			quantity.sendKeys(value);
-			ClickAddtocart.click();
-		} catch (NoSuchElementException nsee) {
+			ClickAddToCart.click();
+		} 
+		catch (NoSuchElementException nsee) {
 			System.out.println(nsee.getStackTrace());
 		}
-		catch (Exception exception) {
+		catch (StaleElementReferenceException  exception) {
 			System.out.println(exception.getStackTrace());
 		}
 		catch (Throwable throwable) {

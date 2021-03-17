@@ -10,13 +10,13 @@ import org.openqa.selenium.io.FileHandler;
 
 public class Screenshot {
 	
-	public static String screenShot(WebDriver driver, String path,String methodname) throws IOException, InterruptedException
+	public static String captureScreenShot(WebDriver driver, String path,String methodname) throws IOException, InterruptedException
 	{
-        String screenshotpath = path +"\\"+methodname+ Util.getCurrentTime() +".jpg";
+        String screenshotPath = path +"\\"+methodname+ Util.getCurrentTime() +".jpg";
 		File file = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		File s = new File(screenshotpath);
+		File s = new File(screenshotPath);
 		FileHandler.copy(file, s);
 		Thread.sleep(3000);
-		return screenshotpath;
+		return screenshotPath;
 	}
 }
