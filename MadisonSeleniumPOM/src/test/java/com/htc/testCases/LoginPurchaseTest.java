@@ -8,7 +8,7 @@ import com.htc.utilities.MadsionDataProvider;
 
 public class LoginPurchaseTest extends TestBase
 {
-	@Test(dataProviderClass = MadsionDataProvider.class, dataProvider = "MadisonRegisterAndLogin")
+	@Test(dataProviderClass = MadsionDataProvider.class, dataProvider = "MadisonRegisterLoginAndPurchase")
 	public void testLoginAndCheckOutPage_shouldDisplayValidInvalidMessage_enterValidAndInvalidDetails(Map<String, String> excelMapData) 
 	{
 		login.performLogin(excelMapData.get("emailid"), excelMapData.get("password"));

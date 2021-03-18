@@ -8,7 +8,7 @@ import com.htc.constants.GlobalVariables;
 
 public class MadsionDataProvider 
 {
-	@DataProvider(name = "MadisonRegisterAndLogin")
+	@DataProvider(name = "MadisonRegisterLoginAndPurchase")
 	public Object[][] madisonValidAndInvalidRegisterAndLoginData(Method method) {
 		Object[][] loginDataSet = null;
 		ExcelReader ref = new ExcelReader(GlobalVariables.EXCEL_DATA_PATH);

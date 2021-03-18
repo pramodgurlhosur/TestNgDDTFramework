@@ -10,7 +10,7 @@ import com.htc.utilities.Screenshot;
 public class RegistrationTest extends TestBase{
 	Screenshot screenshot = new Screenshot();
 
-	@Test(dataProviderClass = MadsionDataProvider.class, dataProvider = "MadisonRegisterAndLogin")
+	@Test(dataProviderClass = MadsionDataProvider.class, dataProvider = "MadisonRegisterLoginAndPurchase")
 	public void testRegistrationPage_shouldShowDashboardAndErrorMessage_enterValidDetails(Map<String, String> mapData)
 	{
         register.performRegistration(mapData.get("firstName"), mapData.get("middleName"), mapData.get("lastName"),
