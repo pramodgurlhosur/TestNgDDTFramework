@@ -20,7 +20,7 @@ public class ShoppingCartPage {
 		PageFactory.initElements(driver, this);
 	}
 
-	public void performSettingAddress(String country, String region, String city, String pin) {
+	public void proceedToBillingPage() {
 		try {
 			checkOutButton.click();
 		} catch (NoSuchElementException nsee) {
@@ -28,6 +28,9 @@ public class ShoppingCartPage {
 		}
 		catch (StaleElementReferenceException  exception) {
 			System.out.println(exception.getStackTrace());
+		}
+		catch (RuntimeException runtime) {
+			System.out.println(runtime.getStackTrace());
 		}
 		catch (Throwable throwable) {
 			System.out.println(throwable.getStackTrace());

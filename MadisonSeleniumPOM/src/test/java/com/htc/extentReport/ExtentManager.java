@@ -21,8 +21,8 @@ public class ExtentManager {
 		return extent;
 	}
 
-	
-	public static ExtentReports createInstance() {
+   public static ExtentReports createInstance() 
+   {
 		String fileName = getReportPath(reportFilepath);
 		ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter(fileName);
 		htmlReporter.config().setTestViewChartLocation(ChartLocation.BOTTOM);
@@ -35,7 +35,7 @@ public class ExtentManager {
         extent = new ExtentReports();
 		extent.attachReporter(htmlReporter);
         extent.setSystemInfo("OS", "Windows");
-		extent.setSystemInfo("AUT", "QA");
+		extent.setSystemInfo("Browser", "Chrome");
         return extent;
 	}
 

@@ -30,15 +30,19 @@ public class Util {
 			if (!element.isDisplayed()) {
 				wait.until(ExpectedConditions.visibilityOf(element));
 			}
-		} catch (NoSuchElementException no) {
+		} 
+		catch (NoSuchElementException no) 
+		{
 			no.printStackTrace();
 		}
-		  catch (StaleElementReferenceException  exception) {
+		catch (StaleElementReferenceException  exception)
+		{
 				System.out.println(exception.getStackTrace());
-			}
-			catch (Throwable throwable) {
+		}
+			catch (Throwable throwable) 
+		{
 				System.out.println(throwable.getStackTrace());
-			}
+	    }
 	    }
 	}
 

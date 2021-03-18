@@ -5,13 +5,14 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.WebDriver;
-import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
+
 import com.htc.constants.GlobalVariables;
 import com.htc.pages.BillingPage;
 import com.htc.pages.CartPage;
@@ -43,22 +44,20 @@ public class TestBase {
 		try {
 			fis = new FileInputStream("src//test//resources//madison.properties");
 		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		try {
 			properties.load(fis);
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
 
 	@BeforeSuite
 	@Parameters("platform")
-	public void start(String browser) {
-
-		this.driver = BrowserFactory.selectWebDriver(browser);
+	public void initializeBrowser(String browser) 
+	{
+     	this.driver = BrowserFactory.selectWebDriver(browser);
 		this.driver.get(GlobalVariables.URL);
 		this.driver.manage().window().maximize();
 		this.driver.manage().timeouts().implicitlyWait(GlobalVariables.IMPLICIT_WAIT_IN_SECONDS, TimeUnit.SECONDS);

@@ -13,9 +13,9 @@ public class Screenshot {
 	public static String captureScreenShot(WebDriver driver, String path,String methodname) throws IOException, InterruptedException
 	{
         String screenshotPath = path +"\\"+methodname+ Util.getCurrentTime() +".jpg";
-		File file = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		File s = new File(screenshotPath);
-		FileHandler.copy(file, s);
+		File source = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		File destination = new File(screenshotPath);
+		FileHandler.copy(source,destination);
 		Thread.sleep(3000);
 		return screenshotPath;
 	}

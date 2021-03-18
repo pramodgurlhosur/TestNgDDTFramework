@@ -1,7 +1,7 @@
 package com.htc.constants;
 
-public class GlobalVariables {
-	
+public class GlobalVariables 
+{
      public static final String CHROME_NAME = "webdriver.chrome.driver";
      public static final String FIREFOX_NAME = "webdriver.gecko.driver";
 	 public static final String CHROME_PATH = "D:\\ChromeDriverSetup\\chromedriver.exe";
@@ -15,5 +15,4 @@ public class GlobalVariables {
 	 public static final String LOGIN_PURCHASE_SHEET="login";
 	 public static final String FAILED_SCREENSHOTS = "src\\main\\resources\\Screenshots\\FailedTests";
 	 public static final String PASSED_SCREENSHOTS = "src\\main\\resources\\Screenshots\\PassedTests";
-	
-}
+	}

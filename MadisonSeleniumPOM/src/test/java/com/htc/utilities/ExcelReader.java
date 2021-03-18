@@ -10,35 +10,34 @@ import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class ExcelReader {
-	Workbook ecomStoreWorkbook;
+	Workbook madisonWorkbook;
 	Sheet loginData;
 
 	public ExcelReader(String excelfilePath) {
 		try {
-			File s = new File(excelfilePath);
-			FileInputStream stream = new FileInputStream(s);
-			ecomStoreWorkbook = new XSSFWorkbook(stream);
+			File file = new File(excelfilePath);
+			FileInputStream stream = new FileInputStream(file);
+			madisonWorkbook = new XSSFWorkbook(stream);
 		} catch (Exception e) {
 			System.out.println("error " + e.getMessage());
 		}
 	}
 
-	public Object[][] getDataUsingMap(String sheetName) {
-
-		loginData = ecomStoreWorkbook.getSheet(sheetName);
+	public Object[][] getDataUsingMap(String sheetName) 
+	{
+    	loginData = madisonWorkbook.getSheet(sheetName);
 		int rowCount = loginData.getLastRowNum();
-		int colCount = loginData.getRow(0).getLastCellNum();
+		int columnCount = loginData.getRow(0).getLastCellNum();
 
-		Object[][] obj = new Object[rowCount][1];
+		Object[][] object = new Object[rowCount][1];
 
 		for (int row = 0; row < rowCount; row++) {
 			Map<Object, Object> dataMap = new HashMap<Object, Object>();
-			for (int col = 0; col < colCount; col++) {
-				dataMap.put(loginData.getRow(0).getCell(col).toString(),
-						loginData.getRow(row + 1).getCell(col).toString());
+			for (int col = 0; col < columnCount; col++) {
+				dataMap.put(loginData.getRow(0).getCell(col).toString(),loginData.getRow(row + 1).getCell(col).toString());
         }
-			obj[row][0] = dataMap;
+			object[row][0] = dataMap;
 		}
-         return obj;
+         return object;
      }
 }

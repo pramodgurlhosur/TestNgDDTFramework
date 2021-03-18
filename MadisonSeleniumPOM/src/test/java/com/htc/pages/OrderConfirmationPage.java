@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 public class OrderConfirmationPage {
 	
 	private WebDriver driver=null;
-	@FindBy(xpath="//div[@class='page-title']")
+	@FindBy(xpath="//h1[text()=\"Your order has been received.\"]")
 	private WebElement checkOutTitle;
 	
 	public OrderConfirmationPage(WebDriver driver) {

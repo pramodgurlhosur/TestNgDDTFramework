@@ -6,6 +6,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+
+import com.htc.base.TestBase;
+import com.htc.constants.GlobalVariables;
+import com.htc.utilities.Screenshot;
 import com.htc.utilities.Util;
 
 public class BillingPage {
@@ -30,8 +34,8 @@ public class BillingPage {
 	private WebElement clickBillingcontinue;
 	@FindBy(xpath = "(//button[@type=\"button\"])[3]")          
 	private WebElement clickPaymentcontinue;
-	@FindBy(xpath = "(//button[@type=\"submit\"])[2]")         
-	private WebElement checkOut;
+	@FindBy(xpath = "//button[@class='button btn-checkout']")          // (//button[@type=\"submit\"])[2]
+	private WebElement placeOrderButton;
 
 	public BillingPage(WebDriver driver) {
 		this.driver = driver;
@@ -50,10 +54,9 @@ public class BillingPage {
 			this.pincode.sendKeys(pincode);
 			this.mobilenumber.sendKeys(mobilenumber);
 			clickBillingcontinue.click();
-			Util.explicitWait(clickPaymentcontinue, driver);
-			clickPaymentcontinue.click();
-			Util.explicitWait(checkOut, driver);
-			checkOut.click();
+			clickPaymentcontinue.click();                                                                                                                               
+			this.placeOrderButton.click();
+			                                                                                                                                         Thread.sleep(4000);
 			
 		} catch (NoSuchElementException nsee) {
 			System.out.println(nsee.getStackTrace());
@@ -61,6 +64,10 @@ public class BillingPage {
 		catch (StaleElementReferenceException  exception) {
 			System.out.println(exception.getStackTrace());
 		}
+		catch (RuntimeException runtime) {
+			System.out.println(runtime.getStackTrace());
+		}
+
 		catch (Throwable throwable) {
 			System.out.println(throwable.getStackTrace());
 		}

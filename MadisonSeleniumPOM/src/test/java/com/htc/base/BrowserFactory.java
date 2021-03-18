@@ -6,7 +6,9 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import com.htc.constants.GlobalVariables;
 
 public class BrowserFactory {
-	public static WebDriver selectWebDriver(String browser) {
+	
+	public static WebDriver selectWebDriver(String browser) 
+	{
 		WebDriver driver=null;
 		if(browser.equalsIgnoreCase("chrome")) {
 			System.setProperty(GlobalVariables.CHROME_NAME, GlobalVariables.CHROME_PATH);
@@ -19,6 +21,5 @@ public class BrowserFactory {
 		else
 			System.out.println("BROWSER NAME INVALID. ENTER VALID BROSWER");
 		return driver;
-
-	}
+     }
 }

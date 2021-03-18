@@ -5,17 +5,17 @@
   <listeners>
     <listener class-name="com.htc.extentReport.CustomListener"/>
   </listeners>
-  <test thread-count="5" name="NewRegistration(failed)">
+  <test thread-count="5" name="NewRegistration_ValidInvalidLogin_ProductPurchaseTest(failed)">
     <classes>
-      <class name="com.htc.test.RegistrationTest">
+      <class name="com.htc.testCases.RegistrationTest">
         <methods>
-          <include name="start"/>
           <include name="getDriver"/>
-          <include name="testRegistrationPage_successMessage_enterValidDetails" invocation-numbers="1"/>
+          <include name="testRegistrationPage_shouldShowDashboardAndErrorMessage_enterValidDetails" invocation-numbers="1"/>
+          <include name="initializeBrowser"/>
           <include name="performlogOutOperaton"/>
           <include name="createPageObjects"/>
         </methods>
-      </class> <!-- com.htc.test.RegistrationTest -->
+      </class> <!-- com.htc.testCases.RegistrationTest -->
     </classes>
-  </test> <!-- NewRegistration(failed) -->
+  </test> <!-- NewRegistration_ValidInvalidLogin_ProductPurchaseTest(failed) -->
 </suite> <!-- Failed suite [Madison_NewUserRegistration_productPurchase] -->

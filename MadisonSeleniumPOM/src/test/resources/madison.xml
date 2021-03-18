@@ -2,13 +2,13 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Madison_NewUserRegistration_productPurchase" preserve-order="true">
 	<parameter name="platform" value="chrome" />
-	<listeners>
-		<listener class-name="com.htc.extentReport.CustomListener" />
-	</listeners>
-	<test thread-count="5" name="NewRegistration">
-		<classes>
-	        <class name="com.htc.test.RegistrationTest"></class> 
-	       <!--  <class name="com.htc.test.LoginPurchaseTest"></class>   -->    
-	   </classes>
+	   <listeners>
+		   <listener class-name="com.htc.extentReport.CustomListener" />
+	   </listeners>
+	   <test thread-count="5" name="NewRegistration_ValidInvalidLogin_ProductPurchaseTest">
+		  <classes>
+       <!--   <class name="com.htc.testCases.RegistrationTest"></class> -->   
+	          <class name="com.htc.testCases.LoginPurchaseTest"></class>    
+	      </classes>
 	</test> 
 </suite> 

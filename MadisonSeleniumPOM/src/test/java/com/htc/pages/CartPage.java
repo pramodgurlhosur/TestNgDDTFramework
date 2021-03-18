@@ -34,6 +34,9 @@ public class CartPage {
 		catch (StaleElementReferenceException  exception) {
 			System.out.println(exception.getStackTrace());
 		}
+		catch (RuntimeException runtime) {
+			System.out.println(runtime.getStackTrace());
+		}
 		catch (Throwable throwable) {
 			System.out.println(throwable.getStackTrace());
 		}

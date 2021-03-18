@@ -50,7 +50,6 @@ public class CustomListener extends TestBase implements ITestListener{
 	    try {
 			Screenshot.captureScreenShot(driver, GlobalVariables.FAILED_SCREENSHOTS,result.getMethod().getMethodName());
 		} catch (IOException | InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
