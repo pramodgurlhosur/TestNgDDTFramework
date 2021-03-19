@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-03-19T10:40:50 IST" name="Madison_NewUserRegistration_productPurchase" finished-at="2021-03-19T10:41:31 IST" duration-ms="40508">
+  <suite started-at="2021-03-19T14:37:44 IST" name="Madison_NewUserRegistration_productPurchase" finished-at="2021-03-19T14:38:58 IST" duration-ms="74148">
     <groups>
     </groups>
-    <test started-at="2021-03-19T10:40:50 IST" name="NewRegistration_ValidInvalidLogin_ProductPurchaseTest" finished-at="2021-03-19T10:41:31 IST" duration-ms="40508">
-      <class name="com.htc.testCases.RegistrationTest">
-        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:com.htc.testCases.RegistrationTest@7a3793c7]" started-at="2021-03-19T10:40:40 IST" name="initializeBrowser" finished-at="2021-03-19T10:40:50 IST" duration-ms="9607" status="PASS">
+    <test started-at="2021-03-19T14:37:44 IST" name="NewRegistration_ValidInvalidLogin_ProductPurchaseTest" finished-at="2021-03-19T14:38:58 IST" duration-ms="74148">
+      <class name="com.htc.testCases.LoginPurchaseTest">
+        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:com.htc.testCases.LoginPurchaseTest@7a3793c7]" started-at="2021-03-19T14:37:31 IST" name="initializeBrowser" finished-at="2021-03-19T14:37:44 IST" duration-ms="13200" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,59 +18,59 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeBrowser -->
-        <test-method is-config="true" signature="getDriver()[pri:0, instance:com.htc.testCases.RegistrationTest@7a3793c7]" started-at="2021-03-19T10:40:50 IST" name="getDriver" finished-at="2021-03-19T10:40:50 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:com.htc.testCases.LoginPurchaseTest@7a3793c7]" started-at="2021-03-19T14:37:44 IST" name="getDriver" finished-at="2021-03-19T14:37:44 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getDriver -->
-        <test-method is-config="true" signature="createPageObjects()[pri:0, instance:com.htc.testCases.RegistrationTest@7a3793c7]" started-at="2021-03-19T10:40:50 IST" name="createPageObjects" finished-at="2021-03-19T10:40:50 IST" duration-ms="111" status="PASS">
+        <test-method is-config="true" signature="createPageObjects()[pri:0, instance:com.htc.testCases.LoginPurchaseTest@7a3793c7]" started-at="2021-03-19T14:37:44 IST" name="createPageObjects" finished-at="2021-03-19T14:37:45 IST" duration-ms="850" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createPageObjects -->
-        <test-method signature="testRegistrationPage_shouldShowDashboardAndErrorMessage_enterValidDetails(java.util.Map)[pri:0, instance:com.htc.testCases.RegistrationTest@7a3793c7]" started-at="2021-03-19T10:40:52 IST" name="testRegistrationPage_shouldShowDashboardAndErrorMessage_enterValidDetails" data-provider="MadisonRegisterLoginAndPurchase" finished-at="2021-03-19T10:40:58 IST" duration-ms="6353" status="PASS">
+        <test-method signature="testLoginAndCheckOutPage_shouldDisplayValidInvalidMessage_enterValidAndInvalidDetails(java.util.Map)[pri:0, instance:com.htc.testCases.LoginPurchaseTest@7a3793c7]" started-at="2021-03-19T14:37:49 IST" name="testLoginAndCheckOutPage_shouldDisplayValidInvalidMessage_enterValidAndInvalidDetails" data-provider="MadisonRegisterLoginAndPurchase" finished-at="2021-03-19T14:38:23 IST" duration-ms="34254" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{firstName=anonymous, lastName=ghost, password=qwerty@123, middleName=unknown, emailid=anonymousghostpvg@gmail.com, confirmpassword=qwerty@123}]]>
+                <![CDATA[{password=qwerty@123, emailid=anonymousghostpvg@gmail.com}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testRegistrationPage_shouldShowDashboardAndErrorMessage_enterValidDetails -->
-        <test-method is-config="true" signature="performlogOutOperaton()[pri:0, instance:com.htc.testCases.RegistrationTest@7a3793c7]" started-at="2021-03-19T10:41:02 IST" name="performlogOutOperaton" finished-at="2021-03-19T10:41:03 IST" duration-ms="1182" status="PASS">
+        </test-method> <!-- testLoginAndCheckOutPage_shouldDisplayValidInvalidMessage_enterValidAndInvalidDetails -->
+        <test-method is-config="true" signature="performlogOutOperaton()[pri:0, instance:com.htc.testCases.LoginPurchaseTest@7a3793c7]" started-at="2021-03-19T14:38:27 IST" name="performlogOutOperaton" finished-at="2021-03-19T14:38:30 IST" duration-ms="2439" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- performlogOutOperaton -->
-        <test-method signature="testRegistrationPage_shouldShowDashboardAndErrorMessage_enterValidDetails(java.util.Map)[pri:0, instance:com.htc.testCases.RegistrationTest@7a3793c7]" started-at="2021-03-19T10:41:03 IST" name="testRegistrationPage_shouldShowDashboardAndErrorMessage_enterValidDetails" data-provider="MadisonRegisterLoginAndPurchase" finished-at="2021-03-19T10:41:17 IST" duration-ms="14054" status="FAIL">
+        <test-method signature="testLoginAndCheckOutPage_shouldDisplayValidInvalidMessage_enterValidAndInvalidDetails(java.util.Map)[pri:0, instance:com.htc.testCases.LoginPurchaseTest@7a3793c7]" started-at="2021-03-19T14:38:30 IST" name="testLoginAndCheckOutPage_shouldDisplayValidInvalidMessage_enterValidAndInvalidDetails" data-provider="MadisonRegisterLoginAndPurchase" finished-at="2021-03-19T14:38:44 IST" duration-ms="14463" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{firstName=edward, lastName=snowdan, password=mrrobot, middleName=hacker, emailid=edwardsnowdan@gmail.com, confirmpassword=mrrobot}]]>
+                <![CDATA[{password=testuser, emailid=testdemo@gmail.com}]]>
               </value>
             </param>
           </params>
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//span[contains(text(),'Thank you for registering with Madison Island.')]"}
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='welcome-msg']//p[@class='hello']//strong"}
   (Session info: chrome=89.0.4389.82)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-NLOJU8G', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.82, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\PramodVG\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57581}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: eb8b7c72a6a5bea3f3f44dedc5280269
-*** Element info: {Using=xpath, value=//span[contains(text(),'Thank you for registering with Madison Island.')]}]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.82, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\PramodVG\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54490}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 99c5c228a8da963dab7c5a4e431fc75a
+*** Element info: {Using=xpath, value=//div[@class='welcome-msg']//p[@class='hello']//strong}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[contains(text(),'Thank you for registering with Madison Island.')]"}
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='welcome-msg']//p[@class='hello']//strong"}
   (Session info: chrome=89.0.4389.82)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-NLOJU8G', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.82, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\PramodVG\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57581}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: eb8b7c72a6a5bea3f3f44dedc5280269
-*** Element info: {Using=xpath, value=//span[contains(text(),'Thank you for registering with Madison Island.')]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.82, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\PramodVG\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54490}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 99c5c228a8da963dab7c5a4e431fc75a
+*** Element info: {Using=xpath, value=//div[@class='welcome-msg']//p[@class='hello']//strong}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -89,8 +89,8 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 at com.sun.proxy.$Proxy15.getText(Unknown Source)
-at com.htc.pages.RegistrationPage.assertSuccessMessage(RegistrationPage.java:69)
-at com.htc.testCases.RegistrationTest.testRegistrationPage_shouldShowDashboardAndErrorMessage_enterValidDetails(RegistrationTest.java:18)
+at com.htc.pages.Homepage.assertLogin(Homepage.java:55)
+at com.htc.testCases.LoginPurchaseTest.testLoginAndCheckOutPage_shouldDisplayValidInvalidMessage_enterValidAndInvalidDetails(LoginPurchaseTest.java:15)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -124,8 +124,8 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testRegistrationPage_shouldShowDashboardAndErrorMessage_enterValidDetails -->
-        <test-method is-config="true" signature="performlogOutOperaton()[pri:0, instance:com.htc.testCases.RegistrationTest@7a3793c7]" started-at="2021-03-19T10:41:20 IST" name="performlogOutOperaton" finished-at="2021-03-19T10:41:31 IST" duration-ms="10153" status="FAIL">
+        </test-method> <!-- testLoginAndCheckOutPage_shouldDisplayValidInvalidMessage_enterValidAndInvalidDetails -->
+        <test-method is-config="true" signature="performlogOutOperaton()[pri:0, instance:com.htc.testCases.LoginPurchaseTest@7a3793c7]" started-at="2021-03-19T14:38:48 IST" name="performlogOutOperaton" finished-at="2021-03-19T14:38:58 IST" duration-ms="10279" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[@title='Log Out']"}
@@ -134,8 +134,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-NLOJU8G', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.82, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\PramodVG\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57581}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: eb8b7c72a6a5bea3f3f44dedc5280269
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.82, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\PramodVG\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54490}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 99c5c228a8da963dab7c5a4e431fc75a
 *** Element info: {Using=xpath, value=//a[@title='Log Out']}]]>
             </message>
             <full-stacktrace>
@@ -145,8 +145,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-NLOJU8G', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.82, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\PramodVG\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57581}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: eb8b7c72a6a5bea3f3f44dedc5280269
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.82, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\PramodVG\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54490}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 99c5c228a8da963dab7c5a4e431fc75a
 *** Element info: {Using=xpath, value=//a[@title='Log Out']}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
@@ -207,7 +207,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- performlogOutOperaton -->
-      </class> <!-- com.htc.testCases.RegistrationTest -->
+      </class> <!-- com.htc.testCases.LoginPurchaseTest -->
     </test> <!-- NewRegistration_ValidInvalidLogin_ProductPurchaseTest -->
   </suite> <!-- Madison_NewUserRegistration_productPurchase -->
 </testng-results>
