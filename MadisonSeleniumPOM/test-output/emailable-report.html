@@ -8,74 +8,68 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num attn">2</td><td class="num">0</td><td class="num">0</td><td class="num">1,132</td><td></td><td></td></tr>
+<tr><th colspan="8">Madison_NewUserRegistration_productPurchase</th></tr>
+<tr><td><a href="#t0">NewRegistration_ValidInvalidLogin_ProductPurchaseTest</a></td><td class="num">0</td><td class="num attn">2</td><td class="num">0</td><td class="num">0</td><td class="num">1,172</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.htc.testCases.LoginPurchaseTest</td><td><a href="#m0">initializeBrowser</a></td><td rowspan="1">1622134056405</td><td rowspan="1">-1622134056405</td></tr><tr><th colspan="4">Default test &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="4">com.htc.testCases.LoginPurchaseTest</td><td><a href="#m1">createPageObjects</a></td><td rowspan="1">1622134056468</td><td rowspan="1">-1622134056468</td></tr><tr class="skippedeven"><td><a href="#m2">getDriver</a></td><td rowspan="1">1622134056429</td><td rowspan="1">-1622134056429</td></tr><tr class="skippedeven"><td><a href="#m3">performlogOutOperaton</a></td><td rowspan="2">1622134057551</td><td rowspan="2">-1622134057551</td></tr><tr class="skippedeven"><td><a href="#m4">performlogOutOperaton</a></td></tr><tr><th colspan="4">Default test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="2">com.htc.testCases.LoginPurchaseTest</td><td><a href="#m5">testLoginAndCheckOutPage_shouldDisplayValidInvalidMessage_enterValidAndInvalidDetails</a></td><td rowspan="2">1622134057541</td><td rowspan="2">0</td></tr><tr class="skippedeven"><td><a href="#m6">testLoginAndCheckOutPage_shouldDisplayValidInvalidMessage_enterValidAndInvalidDetails</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Madison_NewUserRegistration_productPurchase</th></tr></tbody><tbody id="t0"><tr><th colspan="4">NewRegistration_ValidInvalidLogin_ProductPurchaseTest &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.htc.testCases.RegistrationTest</td><td><a href="#m0">initializeBrowser</a></td><td rowspan="1">1622137423932</td><td rowspan="1">43410</td></tr><tr><th colspan="4">NewRegistration_ValidInvalidLogin_ProductPurchaseTest &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="4">com.htc.testCases.RegistrationTest</td><td><a href="#m1">createPageObjects</a></td><td rowspan="1">1622137467478</td><td rowspan="1">-1622137467478</td></tr><tr class="skippedeven"><td><a href="#m2">getDriver</a></td><td rowspan="1">1622137467418</td><td rowspan="1">-1622137467418</td></tr><tr class="skippedeven"><td><a href="#m3">performlogOutOperaton</a></td><td rowspan="2">1622137468538</td><td rowspan="2">-1622137468538</td></tr><tr class="skippedeven"><td><a href="#m4">performlogOutOperaton</a></td></tr><tr><th colspan="4">NewRegistration_ValidInvalidLogin_ProductPurchaseTest &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="2">com.htc.testCases.RegistrationTest</td><td><a href="#m5">testRegistrationPage_shouldShowDashboardAndErrorMessage_enterValidDetails</a></td><td rowspan="2">1622137468456</td><td rowspan="2">0</td></tr><tr class="skippedeven"><td><a href="#m6">testRegistrationPage_shouldShowDashboardAndErrorMessage_enterValidDetails</a></td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">com.htc.testCases.LoginPurchaseTest#initializeBrowser</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
-Parameter &apos;platform&apos; is required by BeforeSuite on method initializeBrowser but has not been marked @Optional or defined
-in C:\Users\PramodVG\AppData\Local\Temp\testng-eclipse-438930683\testng-customsuite.xml
-	at org.testng.internal.Parameters.createParams(Parameters.java:268)
-	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
-	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:301)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:327)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-	at org.testng.TestNG.runSuites(TestNG.java:1069)
-	at org.testng.TestNG.run(TestNG.java:1037)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.htc.testCases.LoginPurchaseTest#createPageObjects</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.htc.testCases.LoginPurchaseTest#getDriver</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.htc.testCases.LoginPurchaseTest#performlogOutOperaton</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.htc.testCases.LoginPurchaseTest#performlogOutOperaton</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">com.htc.testCases.LoginPurchaseTest#testLoginAndCheckOutPage_shouldDisplayValidInvalidMessage_enterValidAndInvalidDetails</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{password=testuser, emailid=testdemo@gmail.com}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
-Parameter &apos;platform&apos; is required by BeforeSuite on method initializeBrowser but has not been marked @Optional or defined
-in C:\Users\PramodVG\AppData\Local\Temp\testng-eclipse-438930683\testng-customsuite.xml
-	at org.testng.internal.Parameters.createParams(Parameters.java:268)
-	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
-	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:301)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:327)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-	at org.testng.TestNG.runSuites(TestNG.java:1069)
-	at org.testng.TestNG.run(TestNG.java:1037)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">com.htc.testCases.LoginPurchaseTest#testLoginAndCheckOutPage_shouldDisplayValidInvalidMessage_enterValidAndInvalidDetails</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{password=qwerty@123, emailid=anonymousghostpvg1@gmail.com}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
-Parameter &apos;platform&apos; is required by BeforeSuite on method initializeBrowser but has not been marked @Optional or defined
-in C:\Users\PramodVG\AppData\Local\Temp\testng-eclipse-438930683\testng-customsuite.xml
-	at org.testng.internal.Parameters.createParams(Parameters.java:268)
-	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
-	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:301)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:327)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-	at org.testng.TestNG.runSuites(TestNG.java:1069)
-	at org.testng.TestNG.run(TestNG.java:1037)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>NewRegistration_ValidInvalidLogin_ProductPurchaseTest</h2><h3 id="m0">com.htc.testCases.RegistrationTest#initializeBrowser</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>chrome</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=91.0.4472.77)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-NLOJU8G&apos;, ip: &apos;192.168.255.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\PramodVG\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51993}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e58bb30e87ce552c84086a17f5a33d53
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
+	at com.htc.base.TestBase.initializeBrowser(TestBase.java:62)
+... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.htc.testCases.RegistrationTest#createPageObjects</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.htc.testCases.RegistrationTest#getDriver</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.htc.testCases.RegistrationTest#performlogOutOperaton</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.htc.testCases.RegistrationTest#performlogOutOperaton</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.htc.testCases.RegistrationTest#testRegistrationPage_shouldShowDashboardAndErrorMessage_enterValidDetails</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{firstName=anonymous, lastName=ghost, password=qwerty@123, middleName=unknown, emailid=anonymousghostpvg1@gmail.com, confirmpassword=qwerty@123}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=91.0.4472.77)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-NLOJU8G&apos;, ip: &apos;192.168.255.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\PramodVG\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51993}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e58bb30e87ce552c84086a17f5a33d53
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
+	at com.htc.base.TestBase.initializeBrowser(TestBase.java:62)
+... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.htc.testCases.RegistrationTest#testRegistrationPage_shouldShowDashboardAndErrorMessage_enterValidDetails</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{firstName=edward, lastName=snowdan, password=mrrobot, middleName=hacker, emailid=edwardsnowdan@gmail.com, confirmpassword=mrrobot}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=91.0.4472.77)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-NLOJU8G&apos;, ip: &apos;192.168.255.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\PramodVG\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51993}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e58bb30e87ce552c84086a17f5a33d53
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
+	at com.htc.base.TestBase.initializeBrowser(TestBase.java:62)
+... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

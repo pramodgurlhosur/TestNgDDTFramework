@@ -2,27 +2,61 @@
 <testng-results ignored="0" total="2" passed="0" failed="0" skipped="2">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-05-27T22:17:36 IST" name="Default suite" finished-at="2021-05-27T22:17:37 IST" duration-ms="1132">
+  <suite started-at="2021-05-27T23:14:27 IST" name="Madison_NewUserRegistration_productPurchase" finished-at="2021-05-27T23:14:28 IST" duration-ms="1172">
     <groups>
     </groups>
-    <test started-at="2021-05-27T22:17:36 IST" name="Default test" finished-at="2021-05-27T22:17:37 IST" duration-ms="1132">
-      <class name="com.htc.testCases.LoginPurchaseTest">
-        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:com.htc.testCases.LoginPurchaseTest@6574a52c]" started-at="2021-05-27T22:17:36 IST" name="initializeBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1622134056405" status="FAIL">
-          <exception class="org.testng.TestNGException">
+    <test started-at="2021-05-27T23:14:27 IST" name="NewRegistration_ValidInvalidLogin_ProductPurchaseTest" finished-at="2021-05-27T23:14:28 IST" duration-ms="1172">
+      <class name="com.htc.testCases.RegistrationTest">
+        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:com.htc.testCases.RegistrationTest@42b3b079]" started-at="2021-05-27T23:13:43 IST" name="initializeBrowser" finished-at="2021-05-27T23:14:27 IST" duration-ms="43410" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
-              <![CDATA[
-Parameter 'platform' is required by BeforeSuite on method initializeBrowser but has not been marked @Optional or defined
-in C:\Users\PramodVG\AppData\Local\Temp\testng-eclipse-438930683\testng-customsuite.xml]]>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=91.0.4472.77)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-NLOJU8G', ip: '192.168.255.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\PramodVG\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51993}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e58bb30e87ce552c84086a17f5a33d53]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'platform' is required by BeforeSuite on method initializeBrowser but has not been marked @Optional or defined
-in C:\Users\PramodVG\AppData\Local\Temp\testng-eclipse-438930683\testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:268)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
-at org.testng.internal.Parameters.createParameters(Parameters.java:700)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:301)
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=91.0.4472.77)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-NLOJU8G', ip: '192.168.255.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\PramodVG\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51993}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e58bb30e87ce552c84086a17f5a33d53
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
+at com.htc.base.TestBase.initializeBrowser(TestBase.java:62)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
 at org.testng.SuiteRunner.privateRun(SuiteRunner.java:327)
 at org.testng.SuiteRunner.run(SuiteRunner.java:286)
 at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
@@ -36,41 +70,68 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeBrowser -->
-        <test-method is-config="true" signature="getDriver()[pri:0, instance:com.htc.testCases.LoginPurchaseTest@6574a52c]" started-at="2021-05-27T22:17:36 IST" name="getDriver" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1622134056429" status="SKIP">
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:com.htc.testCases.RegistrationTest@42b3b079]" started-at="2021-05-27T23:14:27 IST" name="getDriver" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1622137467418" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getDriver -->
-        <test-method is-config="true" signature="createPageObjects()[pri:0, instance:com.htc.testCases.LoginPurchaseTest@6574a52c]" started-at="2021-05-27T22:17:36 IST" name="createPageObjects" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1622134056468" status="SKIP">
+        <test-method is-config="true" signature="createPageObjects()[pri:0, instance:com.htc.testCases.RegistrationTest@42b3b079]" started-at="2021-05-27T23:14:27 IST" name="createPageObjects" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1622137467478" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createPageObjects -->
-        <test-method signature="testLoginAndCheckOutPage_shouldDisplayValidInvalidMessage_enterValidAndInvalidDetails(java.util.Map)[pri:0, instance:com.htc.testCases.LoginPurchaseTest@6574a52c]" started-at="2021-05-27T22:17:37 IST" name="testLoginAndCheckOutPage_shouldDisplayValidInvalidMessage_enterValidAndInvalidDetails" data-provider="MadisonRegisterLoginAndPurchase" finished-at="2021-05-27T22:17:37 IST" duration-ms="0" status="SKIP">
+        <test-method signature="testRegistrationPage_shouldShowDashboardAndErrorMessage_enterValidDetails(java.util.Map)[pri:0, instance:com.htc.testCases.RegistrationTest@42b3b079]" started-at="2021-05-27T23:14:28 IST" name="testRegistrationPage_shouldShowDashboardAndErrorMessage_enterValidDetails" data-provider="MadisonRegisterLoginAndPurchase" finished-at="2021-05-27T23:14:28 IST" duration-ms="0" status="SKIP">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{password=qwerty@123, emailid=anonymousghostpvg1@gmail.com}]]>
+                <![CDATA[{firstName=anonymous, lastName=ghost, password=qwerty@123, middleName=unknown, emailid=anonymousghostpvg1@gmail.com, confirmpassword=qwerty@123}]]>
               </value>
             </param>
           </params>
-          <exception class="org.testng.TestNGException">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
-              <![CDATA[
-Parameter 'platform' is required by BeforeSuite on method initializeBrowser but has not been marked @Optional or defined
-in C:\Users\PramodVG\AppData\Local\Temp\testng-eclipse-438930683\testng-customsuite.xml]]>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=91.0.4472.77)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-NLOJU8G', ip: '192.168.255.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\PramodVG\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51993}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e58bb30e87ce552c84086a17f5a33d53]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'platform' is required by BeforeSuite on method initializeBrowser but has not been marked @Optional or defined
-in C:\Users\PramodVG\AppData\Local\Temp\testng-eclipse-438930683\testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:268)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
-at org.testng.internal.Parameters.createParameters(Parameters.java:700)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:301)
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=91.0.4472.77)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-NLOJU8G', ip: '192.168.255.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\PramodVG\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51993}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e58bb30e87ce552c84086a17f5a33d53
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
+at com.htc.base.TestBase.initializeBrowser(TestBase.java:62)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
 at org.testng.SuiteRunner.privateRun(SuiteRunner.java:327)
 at org.testng.SuiteRunner.run(SuiteRunner.java:286)
 at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
@@ -84,37 +145,64 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLoginAndCheckOutPage_shouldDisplayValidInvalidMessage_enterValidAndInvalidDetails -->
-        <test-method is-config="true" signature="performlogOutOperaton()[pri:0, instance:com.htc.testCases.LoginPurchaseTest@6574a52c]" started-at="2021-05-27T22:17:37 IST" name="performlogOutOperaton" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1622134057530" status="SKIP">
+        </test-method> <!-- testRegistrationPage_shouldShowDashboardAndErrorMessage_enterValidDetails -->
+        <test-method is-config="true" signature="performlogOutOperaton()[pri:0, instance:com.htc.testCases.RegistrationTest@42b3b079]" started-at="2021-05-27T23:14:28 IST" name="performlogOutOperaton" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1622137468507" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- performlogOutOperaton -->
-        <test-method signature="testLoginAndCheckOutPage_shouldDisplayValidInvalidMessage_enterValidAndInvalidDetails(java.util.Map)[pri:0, instance:com.htc.testCases.LoginPurchaseTest@6574a52c]" started-at="2021-05-27T22:17:37 IST" name="testLoginAndCheckOutPage_shouldDisplayValidInvalidMessage_enterValidAndInvalidDetails" data-provider="MadisonRegisterLoginAndPurchase" finished-at="2021-05-27T22:17:37 IST" duration-ms="0" status="SKIP">
+        <test-method signature="testRegistrationPage_shouldShowDashboardAndErrorMessage_enterValidDetails(java.util.Map)[pri:0, instance:com.htc.testCases.RegistrationTest@42b3b079]" started-at="2021-05-27T23:14:28 IST" name="testRegistrationPage_shouldShowDashboardAndErrorMessage_enterValidDetails" data-provider="MadisonRegisterLoginAndPurchase" finished-at="2021-05-27T23:14:28 IST" duration-ms="0" status="SKIP">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{password=testuser, emailid=testdemo@gmail.com}]]>
+                <![CDATA[{firstName=edward, lastName=snowdan, password=mrrobot, middleName=hacker, emailid=edwardsnowdan@gmail.com, confirmpassword=mrrobot}]]>
               </value>
             </param>
           </params>
-          <exception class="org.testng.TestNGException">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
-              <![CDATA[
-Parameter 'platform' is required by BeforeSuite on method initializeBrowser but has not been marked @Optional or defined
-in C:\Users\PramodVG\AppData\Local\Temp\testng-eclipse-438930683\testng-customsuite.xml]]>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=91.0.4472.77)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-NLOJU8G', ip: '192.168.255.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\PramodVG\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51993}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e58bb30e87ce552c84086a17f5a33d53]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'platform' is required by BeforeSuite on method initializeBrowser but has not been marked @Optional or defined
-in C:\Users\PramodVG\AppData\Local\Temp\testng-eclipse-438930683\testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:268)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
-at org.testng.internal.Parameters.createParameters(Parameters.java:700)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:301)
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=91.0.4472.77)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-NLOJU8G', ip: '192.168.255.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\PramodVG\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51993}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e58bb30e87ce552c84086a17f5a33d53
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
+at com.htc.base.TestBase.initializeBrowser(TestBase.java:62)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
 at org.testng.SuiteRunner.privateRun(SuiteRunner.java:327)
 at org.testng.SuiteRunner.run(SuiteRunner.java:286)
 at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
@@ -128,15 +216,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLoginAndCheckOutPage_shouldDisplayValidInvalidMessage_enterValidAndInvalidDetails -->
-        <test-method is-config="true" signature="performlogOutOperaton()[pri:0, instance:com.htc.testCases.LoginPurchaseTest@6574a52c]" started-at="2021-05-27T22:17:37 IST" name="performlogOutOperaton" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1622134057551" status="SKIP">
+        </test-method> <!-- testRegistrationPage_shouldShowDashboardAndErrorMessage_enterValidDetails -->
+        <test-method is-config="true" signature="performlogOutOperaton()[pri:0, instance:com.htc.testCases.RegistrationTest@42b3b079]" started-at="2021-05-27T23:14:28 IST" name="performlogOutOperaton" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1622137468538" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- performlogOutOperaton -->
-      </class> <!-- com.htc.testCases.LoginPurchaseTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.htc.testCases.RegistrationTest -->
+    </test> <!-- NewRegistration_ValidInvalidLogin_ProductPurchaseTest -->
+  </suite> <!-- Madison_NewUserRegistration_productPurchase -->
 </testng-results>
